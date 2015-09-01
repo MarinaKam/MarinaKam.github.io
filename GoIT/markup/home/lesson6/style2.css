@@ -1,0 +1,83 @@
+.body{
+    border: 1px solid transparent;
+    margin: auto;
+    width: 100%;
+    background-image: url("task3.jpg");
+    padding-top: 5px;
+    padding-bottom: 45px;
+    position: relative;
+    font-family: Trebuchet MS;
+    padding-left: 20px;
+    margin-left: -1%;
+}
+.body-content{
+    border: 1px solid transparent;
+    margin-left: 5px;
+    padding-left: 20px;
+}
+.foto, .header{
+    display: inline-block;
+    margin-left: 2%;
+
+}
+.pheader{
+    border-bottom: 1px dashed #666;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 13pt;
+    font-style: italic;
+    color: #3070a8;
+    padding-top: 0;
+}
+.name, .customer{
+    display: inline-block;
+}
+.header{
+    border: 1px solid white;
+    background: white;
+    position: relative;
+    width: 35%;
+    padding: 14px 1px;
+    top: -15px;
+
+
+}
+.header::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 38px;
+    border: 12px solid transparent;
+    border-right: 17px solid white;
+}
+.name{
+    width: 50%;
+    margin-left: 2%;
+}
+.customer{
+    margin-left: 28%;
+}
+.foto{
+    padding-left: 1%;
+
+}
+.footer{
+    color: #666;
+    font-size: 13pt;
+    text-align: center;
+    letter-spacing: .5pt;
+    padding-top: 10px;
+
+}
+.what{
+    border: 1px solid transparent;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: #3170a8;
+    letter-spacing: .5pt;
+    text-transform: uppercase;
+}
+.what span{
+    color: #ee8129;
+}

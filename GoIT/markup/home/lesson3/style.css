@@ -1,0 +1,55 @@
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+    color: orange;
+}
+p:first-letter {
+    color: red; /* Красный цвет первой буквы в каждом абзаце */
+}
+em{
+    background-color: green;
+}
+#allotment h2 {
+    color: orange;
+}
+#warehouse h2 {
+    color: blue;
+}
+ul li {
+    font-weight: bold;
+    color: black;
+}
+ol.fruits-list li {
+    font-weight: normal;
+    color: grey;
+}
+ol.vegetables-list li {
+    font-weight: normal;
+    color: red;
+}
+#warehouse ol.fruits-list li {
+    color: darkgreen;
+}
+thead td {
+    font-weight: bold;
+    text-align: center;
+}
+
+tbody {
+    text-align: center;
+}
+tbody td:first-child
+{
+    color: orange;
+    text-align: left;
+}
+/*tbody td:nth-of-type(3n+2){
+    background-color: green;
+}*/
+tbody td:nth-last-child(3n+2){
+    background-color: green;
+}
+tbody td:nth-last-of-type(2n+1){
+    background-color: green;
+}

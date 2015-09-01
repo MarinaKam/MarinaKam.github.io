@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            border: 1px solid green;
+            padding: 10px;
+            width: 180px;
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+<form action="#"> 
+    Name:<br/>
+    <input type="text" name="firstname" />
+    <br/>
+    Email:<br/>
+    <input type="email" name="email" autocomplete="on"><br/>
+    <br/>
+    Sex:<br/>
+    <input type="radio" name="sex" value="male" />Male
+    <input type="radio" name="sex" value="female" /> Famel
+    <br/>
+    <br/>
+    Current statuse<br/>
+    <input type="checkbox" name="vehicle" value="student" /> Student
+    <br/>
+    <input type="checkbox" name="vehicle" value="employed" /> Employed
+    <br/>
+    <input type="checkbox" name="vehicle" value="unemployed" />Unemployed
+    <br/>
+    <br/>
+    Month and Year of berth<br/>
+        <select name="month">
+            <option value="january" selected>January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="augustus">Augustus</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+    <select name="year">
+        <option value="1984" selected>1984</option>
+        <option value="1985">1985</option>
+        <option value="1986">1986</option>
+        <option value="1987">1987</option>
+        <option value="1988">1988</option>
+        <option value="1989">1989</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+</select>
+    <br/>
+    <br/>
+    Skills and Technologies<br/>
+    <select name="skills" size="10" multiple>
+        <optgroup label="Tech skills">
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+            <option value="4">git</option>
+        </optgroup>
+        <optgroup label="Soft skills">
+            <option value="u1">Time management</option>
+            <option value="u2">Proactivity</option>
+            <option value="u3">Teamwork</option>
+            <option value="u4">Leadership</option>
+        </optgroup>
+    </select>
+    <br/>
+    <br/>
+    Photo<br/>
+    <input type="file" name="img" multiple>
+    <br/>
+    <br/>
+    <textarea name="comment" cols="15" rows="5"> </textarea>
+    <br/>
+    <input type="submit" value="Отправить" />
+</form>
+</body>
+</html>

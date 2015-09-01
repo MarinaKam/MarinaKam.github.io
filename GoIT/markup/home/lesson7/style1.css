@@ -1,0 +1,37 @@
+.sivtsev{
+    margin: 50px auto;
+    width: 380px;
+    font-family:Arial,serif;
+    text-align:justify;
+    color:transparent;
+    text-shadow: 0 0 3px rgba(0,0,0,0.6)
+}
+.sivtsev p:after{
+    content:"";
+    display:inline-block;
+    width:100%;
+}
+.uline{
+    width: 100%;
+    height: 1px;
+    background: transparent;
+    box-shadow: 0 2px 2px rgba(255,0,0,0.6);
+    margin-bottom: 20px;
+}
+p{
+    text-align:justify;
+    line-height:10px;
+}
+.sight01{font-size:6em;}
+.sight02{font-size:5em;}
+.sight03{font-size:4em;}
+.sight04{font-size:3em;}
+.sight05{font-size:2em;}
+.sight06{font-size:1.5em;}
+.sight07{font-size:1.2em;}
+.sight08{font-size:1.1em;}
+.sight09{font-size:1.0em;}
+.sight10{font-size:0.9em;}
+.sight15{font-size:0.7em;}
+.sight20{font-size:0.6em;}
+

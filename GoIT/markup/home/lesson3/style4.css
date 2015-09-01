@@ -1,0 +1,64 @@
+a[href^="/"] {
+    color: blue;
+}
+a[href^="/news"] {
+    color: blue;
+}
+a[href^="http"]{
+    color: #f70;
+}
+
+a[href*="google"]{
+    color: #666;
+}
+[target="_blank"]:after{
+    content: "\21f1";
+    display: inline-block;
+    transform: scaleX(-1);
+}
+/*вариант от студентов по ссылкам
+a[href^="http://"]:not([href*="google.com"]),
+a[href^="https://"]:not([href*="google.com"]){
+    color: #f70;
+}
+
+a[href*="google.com"] {
+    color: #666;
+}
+
+a[target="_blank"]:after {
+    content: " \21f1";
+    display: inline-block;
+    transform: scaleX(-1);
+    margin-left: 5px;
+}*/
+/*сначала думала что так все нужно делать*/
+/*a[href^="/"] {
+    color: blue;
+}
+a[href^="/news"] {
+    color: blue;
+}
+a[href="http://ya.ru"] {
+    color: orange;
+}
+a[href^="https://mail.ya.ru"] {
+    color: orange;
+}
+a[href^="http://maps.yandex.ru"] {
+    color: orange;
+}
+a[target="_blank"]:after {
+    content: " \21f1";
+    display: inline-block;
+    transform: scaleX(-1)
+}
+/*a[href^="http://google.com"] {
+    color: #666;
+}
+a[href^="http://maps.google.com"] {
+    color: #666;
+}
+a[href^="http://news.google.com"] {
+    color: #666;
+} */

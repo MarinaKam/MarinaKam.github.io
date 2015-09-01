@@ -1,0 +1,72 @@
+.container {
+    background: #00a0ff;
+    width: 100%;
+    height: 39px;
+    position: relative;
+    margin-left: -10px;
+    padding-left: 20px;
+    top: -10px;
+
+}
+/*основное меню*/
+#navbar{
+    border: 1px solid transparent;
+    background: #00a0ff;
+    width: 900px;
+    margin: 0 auto;
+    padding-left: 250px;
+    position: fixed;
+    top: -5px;
+    padding-top: 3px;
+}
+/*основное меню - текст*/
+ul li {
+    display: inline-block;/*ставит в одну линию все элементы*/
+    padding: 0 5px;
+    padding-top: 10px;
+    font-family: "Economica";
+    font-size:12pt;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0 auto;
+}
+ul li:nth-child {
+    float:right; /*прилипают друг к другу и при изменении ширины экрана все элементы видны за счет переноса*/
+}
+a {
+    color: #fff;
+    text-decoration: none;/*убирает подчеркивание ссылок*/
+}
+a:hover{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #eee;
+    color: #9894a7;
+}/*при наведении мышкой меняется цвет, но элемент еще не активирован*/
+/*подменю*/
+#navbar ul{
+    border: 1px solid transparent;
+    display: none;
+    font-family: sans-serif;
+    text-transform: none;
+    position:fixed;
+    top: 4.5%;
+    width: 100%;
+    left: -1%;
+    padding-left: 23%;
+
+}
+/*подменю*/
+#navbar li:hover ul {
+    display: inline-block;
+    background: #eee;
+    color: #9894a7;
+    list-style-type: none;
+    text-transform: none;
+    padding-bottom: 10px;
+}
+.menu li{
+    font-family: sans-serif;
+    text-transform: none;
+}
+

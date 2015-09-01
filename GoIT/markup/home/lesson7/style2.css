@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Futura Bt Book";
+    src: url("fonts/futura-bt_book.ttf");
+}
+@font-face {
+    font-family: "Futura Bt Bold";
+    src: url("fonts/futura-bt_bold.ttf");
+}
+@font-face {
+    font-family: "Calibri Italic";
+    src: url("fonts/Calibri%20Italic.ttf");
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1400px;
+}
+header {
+    background: #ffffff none repeat scroll 0 0;
+    clear: both;
+    overflow: hidden;
+    padding: 27px 248px 0 189px;
+}
+header .logo {
+    float: left;
+}
+header menu {
+    float: right;
+}
+header menu ul {
+    font-size: 0;
+}
+header menu li {
+    display: inline-block;
+}
+header menu li a {
+    color: #989898;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    padding: 15px 17px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header menu li:hover a, header menu li.active a {
+    color: #3070a8;
+}
+header menu li.active a {
+    border-bottom: 4px solid #3070a8;
+}
+.banner {
+    background-image: url("banner1.jpg");
+    height: 584px;
+    margin: auto;
+    position: relative;
+    width: 1400px;
+}
+.banner_conteiner {
+    bottom: 0;
+    color: #ffffff;
+    left: 0;
+    overflow: hidden;
+    padding: 144px 264px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.banner_title {
+    font-family: "Futura Bt Book",sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+.banner_title span {
+    display: block;
+    font-family: "Futura Bt Bold",sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+.banner_text {
+    font-family: "Calibri Italic",sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 21px;
+    padding: 0 155px;
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+.banner_button {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 35px auto 0;
+    padding: 17px 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner_button:hover {
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+}

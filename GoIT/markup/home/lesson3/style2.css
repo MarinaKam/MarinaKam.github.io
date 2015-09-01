@@ -1,0 +1,7 @@
+p:nth-child(2) {
+    font-family: cursive;
+    font-size: large;
+}
+p:nth-last-child(1) {
+    color: #999;
+}/* последний абзац окрасил шрифт*/
