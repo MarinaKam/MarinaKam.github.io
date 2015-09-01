@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Futura Bt Book";
+    src: url("fonts/futura-bt-book.ttf");
+}
+@font-face {
+    font-family: "Futura Bt Bold";
+    src: url("fonts/futura-bt-bold.ttf");
+}
+@font-face {
+    font-family: "Calibri Italic";
+    src: url("fonts/calibrii.ttf");
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1400px;
+}
+header {
+    background: #ffffff none repeat scroll 0 0;
+    clear: both;
+    overflow: hidden;
+    padding: 27px 248px 0 189px;
+}
+header .logo {
+    float: left;
+}
+header menu {
+    float: right;
+}
+header menu ul {
+    font-size: 0;
+}
+header menu li {
+    display: inline-block;
+}
+header menu li a {
+    color: #989898;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    padding: 15px 17px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header menu li:hover a, header menu li.active a {
+    color: #3070a8;
+}
+header menu li.active a {
+    border-bottom: 4px solid #3070a8;
+}
+.banner {
+    background-image: url("../img/banner1.jpg");
+    height: 584px;
+    margin: auto;
+    position: relative;
+    width: 1400px;
+}
+.banner_conteiner {
+    bottom: 0;
+    color: #ffffff;
+    left: 0;
+    overflow: hidden;
+    padding: 144px 264px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.banner_title {
+    font-family: "Futura Bt Book",sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+.banner_title span {
+    display: block;
+    font-family: "Futura Bt Bold",sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+.banner_text {
+    font-family: "Calibri Italic",sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 21px;
+    padding: 0 155px;
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+.banner_button {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 35px auto 0;
+    padding: 17px 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner_button:hover {
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+}
+/*ПРАЙС*/
+
+.pricing{
+    border: 1px solid transparent;
+    padding: 70px 0 75px;
+}
+.pricing-title {
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #41525c;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pricing-wrap {
+    margin: 30px auto 0;
+    width: 876px;
+    font-size: 0;
+}
+.pricing-item {
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.pricing-item:nth-of-type(2) {
+    border: 4px solid #EE8129;
+    width: 286px;
+    box-shadow: 0 0 13px 0 rgba(8, 116, 178, 0.5);
+    position: relative;
+}
+
+header {
+    text-align: center;
+}
+
+.pricing-item:nth-of-type(1) .pricing-header {
+    background: #37c2d3;
+}
+
+.pricing-item:nth-of-type(2) .pricing-header {
+    background: #EE8129;
+}
+
+.pricing-item:nth-of-type(3) .pricing-header {
+    background: #1cb79a;
+}
+
+.pricing-item:nth-of-type(1) .pricing-header,
+.pricing-item:nth-of-type(3) .pricing-header {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.pricing-item:nth-of-type(1),
+.pricing-item:nth-of-type(3) {
+    border: 1px solid #e8eaec;
+    width: 289px;
+}
+
+.pricing-item:nth-of-type(1) {
+    margin-right: -1px;
+}
+
+.pricing-item:nth-of-type(3) {
+    margin-left: -1px;
+}
+
+.pricing-header .title {
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 23px 10px;
+    margin: 0;
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.pricing-item:nth-of-type(1) .pricing-header .title,
+.pricing-item:nth-of-type(3) .pricing-header .title {
+    padding: 20px 10px 13px;
+}
+
+.pricing-in {
+    padding: 19px 14px 30px;
+}
+
+.pricing-item:nth-of-type(1) .pricing-in,
+.pricing-item:nth-of-type(3) .pricing-in {
+    padding: 19px 14px 23px;
+}
+
+.pricing-in .title {
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 24px;
+    color: #3f4042;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+}
+
+.pricing-in .price {
+    position: relative;
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: #35495a;
+    width: 150px;
+    height: 75px;
+    line-height: 60px;
+    padding: 6px 13px;
+    box-sizing: border-box;
+    letter-spacing: -0.05em;
+    margin: 0 auto 26px;
+}
+
+.pricing-in .price span {
+    position: absolute;
+    font-family: "Trebuchet MS Regular", sans-serif;
+}
+
+.pricing-in .price span:first-of-type {
+    top: 6px;
+    left: 0;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.pricing-in .price span:last-of-type {
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    letter-spacing: -0.03em;
+}
+
+.pricing-in ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.pricing-in li {
+    position: relative;
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 15px;
+    color: #888c94;
+    padding: 8px 20px 8px 63px;
+    margin-bottom: 2px;
+}
+
+.pricing-in li:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 33px;
+    width: 13px;
+    height: 15px;
+    background: url("../img/task2.png");
+}
+
+.pricing-in li:nth-child(odd) {
+    background: #edf5fd;
+}
+
+.pricing-in li:nth-child(even) {
+    background: #f5f5f6;
+}
+
+.pricing-item button {
+    width: 252px;
+    padding: 11px;
+    box-sizing: border-box;
+    margin: 0 4px;
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pricing-item:nth-of-type(1) button,
+.pricing-item:nth-of-type(3) button {
+    background: #3371a6;
+    box-shadow: inset 0 0px #16436a, 0 3.5px #16436a;
+    transition: .2s;
+}
+
+.pricing-item:nth-of-type(2) button {
+    background: #EE8129;
+    box-shadow: inset 0 0px #b3560b, 0 3.5px #b3560b;
+    transition: .2s;
+}
+
+.pricing-item:nth-of-type(1) button:hover,
+.pricing-item:nth-of-type(3) button:hover {
+    background: #4387a6;
+}
+
+.pricing-item:nth-of-type(2) button:hover {
+    background: #ee9d3a;
+}
+.pricing-item:nth-of-type(2) button:active{
+    /border: 1px solid transparent;
+    box-shadow: inset 0 0px #b3560b, 0 1.5px #b3560b;
+    color: #eee;
+    background: #ee8129;
+    transform: translate(0,4px);
+}
+
+.pricing-item button:active {
+/ box-shadow : none;
+}
+.pricing-item:nth-of-type(1) button:active,
+.pricing-item:nth-of-type(3) button:active {
+    /border: 1px solid transparent;
+    box-shadow: inset 0 0px #16436a, 0 1.5px #16436a;
+    color: #eee;
+    background: #3371a6;
+    transform: translate(0,4px);
+}
+
+.pricing-item button:focus {
+    outline: none;
+    /box-shadow: none;
+}
+
+/*КОММЕНТЫ*/
+.body{
+    margin: auto;
+    width: 1400px;
+    background-image: url("../img/task3.jpg");
+    padding-top: 60px;
+    padding-bottom: 65px;
+    position: relative;
+    font-family: Trebuchet MS;
+
+}
+
+.body-content{
+    border: 1px solid transparent;
+    margin-left: 5px;
+    padding-left: 20px;
+}
+
+.foto, .header{
+    display: inline-block;
+    margin-left: 2%;
+    padding-left: 6%;
+}
+
+.pheader{
+    border-bottom: 1px dashed #666;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 10pt;
+    font-style: italic;
+    color: #3070a8;
+    padding-top: 0;
+}
+
+.name, .customer{
+    display: inline-block;
+}
+
+.header{
+    border: 1px solid white;
+    background: white;
+    position: relative;
+    width: 28%;
+    padding: 19px 1px;
+    top: -24px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 38px;
+    border: 12px solid transparent;
+    border-right: 17px solid white;
+}
+
+.name{
+    width: 50%;
+    margin-left: 2%;
+}
+.customer{
+    margin-left: 28%;
+}
+.footer{
+    color: #666;
+    font-size: 10pt;
+    text-align: center;
+    letter-spacing: .5pt;
+    padding-top: 10px;
+
+}
+
+.what{
+    /border: 1px solid transparent;
+    width: 100%;
+    font-size: 20pt;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #3170a8;
+    letter-spacing: .5pt;
+    text-transform: uppercase;
+}
+
+.what span{
+    color: #ee8129;
+}

@@ -1,0 +1,236 @@
+.pricing-all h1 {
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #41525c;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pricing-wrap {
+    margin: 30px auto 0;
+    width: 883px;
+    font-size: 0;
+    position: relative;
+}
+.pricing {
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.pricing:nth-of-type(2) {
+    border: 4px solid #EE8129;
+    width: 286px;
+    box-shadow: 0 0 13px 0 rgba(8, 116, 178, 0.5);
+    position: relative;
+}
+
+header {
+    text-align: center;
+}
+
+.pricing:nth-of-type(1) header {
+    background: #37c2d3;
+}
+
+.pricing:nth-of-type(2) header {
+    background: #EE8129;
+}
+
+.pricing:nth-of-type(3) header {
+    background: #1cb79a;
+}
+
+.pricing:nth-of-type(1) header,
+.pricing:nth-of-type(3) header {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.pricing:nth-of-type(1),
+.pricing:nth-of-type(3) {
+    border: 1px solid #e8eaec;
+    width: 289px;
+}
+
+.pricing:nth-of-type(1) {
+    margin-right: -1px;
+}
+
+.pricing:nth-of-type(3) {
+    margin-left: -1px;
+}
+header .title {
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 23px 10px;
+    margin: 0;
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pricing:nth-of-type(1) header .title,
+.pricing:nth-of-type(3) header .title {
+    padding: 20px 10px 13px;
+}
+
+.pricing-in {
+    padding: 19px 14px 30px;
+}
+
+.pricing:nth-of-type(1) .pricing-in,
+.pricing:nth-of-type(3) .pricing-in {
+    padding: 19px 14px 23px;
+}
+
+.pricing-in .title {
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 24px;
+    color: #3f4042;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+}
+
+.pricing-in .price {
+    position: relative;
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: #35495a;
+    width: 150px;
+    height: 75px;
+    line-height: 60px;
+    padding: 6px 13px;
+    box-sizing: border-box;
+    letter-spacing: -0.05em;
+    margin: 0 auto 26px;
+}
+
+.pricing-in .price span {
+    position: absolute;
+    font-family: "Trebuchet MS Regular", sans-serif;
+}
+
+.pricing-in .price span:first-of-type {
+    top: 6px;
+    left: 0;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.pricing-in .price span:last-of-type {
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    letter-spacing: -0.03em;
+}
+
+.pricing-in ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.pricing-in li {
+    position: relative;
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 15px;
+    color: #888c94;
+    padding: 8px 20px 8px 63px;
+    margin-bottom: 2px;
+}
+
+.pricing-in li:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 33px;
+    width: 13px;
+    height: 15px;
+    background: url("task2.png");
+}
+
+.pricing-in li:nth-child(odd) {
+    background: #edf5fd;
+}
+
+.pricing-in li:nth-child(even) {
+    background: #f5f5f6;
+}
+
+button {
+    display: inline-block;
+    width: 252px;
+    padding: 11px;
+    box-sizing: border-box;
+    margin: 0 4px;
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pricing:nth-of-type(1) button,
+.pricing:nth-of-type(3) button {
+    background: #3371a6;
+    /box-shadow: 0 3px 0 0 #16436a;
+    box-shadow: inset 0 0px #16436a, 0 3px #16436a;
+}
+
+.pricing:nth-of-type(2) button {
+    background: #EE8129;
+    /box-shadow: 0 3px 0 0 #B3560B;
+    box-shadow: inset 0 0px #b3560b, 0 3px #b3560b;
+}
+
+.pricing:nth-of-type(1) button:hover,
+.pricing:nth-of-type(3) button:hover {
+    background: #4387a6;
+}
+
+.pricing:nth-of-type(2) button:hover {
+    background: #ee9d3a;
+}
+.pricing button:active {
+    box-shadow: none;
+}
+.pricing:nth-of-type(1) button:active,
+.pricing:nth-of-type(3) button:active {
+    /border: 1px solid transparent;
+    box-shadow: inset 0 0px #16436a, 0 1.5px #16436a;
+    color: #eee;
+    background: #3371a6;
+    transform: translate(0,4px);
+}
+.pricing:nth-of-type(2) button:active{
+    /border: 1px solid transparent;
+    box-shadow: inset 0 0px #b3560b, 0 1.5px #b3560b;
+    color: #eee;
+    background: #ee8129;
+    transform: translate(0,4px);
+}
+
+
+.pricing button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+

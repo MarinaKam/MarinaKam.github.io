@@ -7,8 +7,6 @@
     padding-top: 10px;
 }
 #container p{
-    font-size: 20pt;
-/font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     color: #41525c;
@@ -46,6 +44,7 @@ header p{
 #parent_first header p{
     border: 2px solid #37c2d3;
     background: #37c2d3;
+    color: #fff;
 }
 .icon p{
     font-weight: normal;
@@ -81,7 +80,7 @@ header p{
     font-size: 16px;
     letter-spacing: .5px;
 }
-li{
+.list li{
     display: inline-block;
     width: 262px;
     margin-bottom: 1px;
@@ -97,10 +96,10 @@ li{
     top: 102px;
     letter-spacing: .8px;
 }
-li:nth-child(2n+1) {
+.list li:nth-child(2n+1) {
     background: #edf5fd;
 }
-li:nth-last-child(2n+1){
+.list li:nth-last-child(2n+1){
     background: #f5f5f6;
 }
 a.button {
@@ -138,6 +137,7 @@ a.button {
     font-size: 18pt;
     padding-top: 20px;
     padding-bottom: 24px;
+    color: #fff;
 }
 #parent_second a.button {
     background: #ee8129;
@@ -156,6 +156,7 @@ a.button {
 #parent_third header p{
     border: 2px solid #1cb79a;
     background: #1cb79a;
+    color: #fff;
 }
 #parent_third .button:active{
     border: 1px solid transparent;
@@ -170,7 +171,7 @@ a.button {
 #parent_first{
     border: 2px solid #f3f5f5;
     border-radius: 4px;
-    margin: 15px auto;
+    /margin: 15px auto;
     width: 290px;
     height: 444px;
     position: absolute;
@@ -182,7 +183,7 @@ a.button {
     width: 290px;
     height: 465px;
     border-radius: 4px;
-    margin: 15px auto;
+    /margin: 15px auto;
     box-shadow:0 0 6px 3px #cbe2ef;
     position: absolute;
     margin-top: 1%;
@@ -191,7 +192,7 @@ a.button {
 #parent_third{
     border: 2px solid #f3f5f5;
     border-radius: 4px;
-    margin: 15px auto;
+    /margin: 15px auto;
     width: 290px;
     height: 444px;
     position: absolute;
