@@ -1,83 +1,88 @@
-.body{
-    border: 1px solid transparent;
-    margin: auto;
-    width: 100%;
-    background-image: url("task3.jpg");
-    padding-top: 5px;
-    padding-bottom: 45px;
-    position: relative;
-    font-family: Trebuchet MS;
-    padding-left: 20px;
-    margin-left: -1%;
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans.ttf");
 }
-.body-content{
-    border: 1px solid transparent;
-    margin-left: 5px;
-    padding-left: 20px;
+@font-face {
+    font-family: "Futura Bt Book";
+    src: url("fonts/futura-bt-book.ttf");
 }
-.foto, .header{
-    display: inline-block;
-    margin-left: 2%;
-
+@font-face {
+    font-family: "Futura Bt Bold";
+    src: url("fonts/futura-bt-bold.ttf");
 }
-.pheader{
-    border-bottom: 1px dashed #666;
-    width: 90%;
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1023px;
+}
+#testimonials{
     margin: 0 auto;
-    font-size: 13pt;
-    font-style: italic;
-    color: #3070a8;
-    padding-top: 0;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0) url("task3.jpg") no-repeat scroll 0 0/cover;
+    padding-bottom: 30px;
 }
-.name, .customer{
+.testimonials-wrapper{
+    width: 1023px;
+    margin: 0 auto;
+}
+h2.wrap-title-customer{
+    float: right;
+}
+.wrap-item {
     display: inline-block;
+    width: 45%;
+    margin: 0 48px 50px 0;
+    vertical-align: top;
 }
-.header{
+
+.wrap-title, .wrap-title-customer{
+    display: inline-block;
+    font: 13px "Open Sans",italic, sans-serif;
+    color: #3070a8;
+}
+.wrap-img{
+    position: absolute;
+}
+.wrap-inner-text{
     border: 1px solid white;
     background: white;
-    position: relative;
-    width: 35%;
-    padding: 14px 1px;
-    top: -15px;
-
-
-}
-.header::before {
-    content: '';
-    position: absolute;
-    left: -30px;
-    top: 38px;
-    border: 12px solid transparent;
-    border-right: 17px solid white;
-}
-.name{
-    width: 50%;
-    margin-left: 2%;
-}
-.customer{
-    margin-left: 28%;
-}
-.foto{
-    padding-left: 1%;
-
-}
-.footer{
+    margin: 0 0 0 125px;
+    padding: 0 0 0 15px ;
+    width: 335px;
+    font: 13px "Open Sans", sans-serif;
     color: #666;
-    font-size: 13pt;
-    text-align: center;
-    letter-spacing: .5pt;
-    padding-top: 10px;
-
+    text-align: left;
 }
-.what{
-    border: 1px solid transparent;
-    width: 100%;
-    font-size: 40px;
+.wrap-inner-title-all{
+    border-bottom: 1px dotted #666;
+    width: 90%;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0px;
+}
+.testimonials-title{
+    font-family: "Futura Bt Bold", sans-serif;
+    font-size: 28px;
     text-align: center;
     color: #3170a8;
     letter-spacing: .5pt;
     text-transform: uppercase;
+    vertical-align: top;
+    width: 1023px;
+    margin: 0 auto;
 }
-.what span{
+.testimonials-title span{
     color: #ee8129;
+    font-family: "Futura Bt Book", sans-serif;
+    font-weight: normal;
+}
+.wrap-text{
+    margin-top: 5px;
+}
+.wrap-inner-text::before {
+    content: '';
+    position: absolute;
+    margin-left: -44px;
+    margin-top: 38px;
+    border: 12px solid transparent;
+    border-right: 17px solid white;
 }

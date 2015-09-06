@@ -60,7 +60,7 @@ menu li li {
 
 menu ul a {
     display: block;
-    color: #9894A7;
+    color: #eee;
     font-size: 14px;
     font-family: 'Economica', sans-serif;
     font-weight: bold;
@@ -69,7 +69,11 @@ menu ul a {
     height: 36px;
     line-height: 36px;
 }
-
+menu ul a:hover{
+    background: #eee;
+    color: white;
+}
 menu li:hover ul {
     visibility: visible;
+
 }
