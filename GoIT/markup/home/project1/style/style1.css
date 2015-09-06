@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Futura Bt Book";
+    src: url("fonts/futura-bt-book.ttf");
+}
+@font-face {
+    font-family: "Futura Bt Bold";
+    src: url("fonts/futura-bt-bold.ttf");
+}
+@font-face {
+    font-family: "OpenSans Semibold";
+    src: url("fonts/OpenSans%20Semibold.ttf");
+}
+@font-face {
+    font-family: "Open Sans Italic";
+    src: url("fonts/Open%20Sans%20Italic.ttf");
+}
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("fonts/Open%20Sans%20Regular.ttf");
+}
+@font-face {
+    font-family: "Calibri Italic";
+    src: url("fonts/Calibri-Italic.ttf");
+}
+@font-face {
+    font-family: "Trebuchet MS Bold";
+    src: url("fonts/Trebuchet-MS-Bold__.ttf");
+}
+@font-face {
+    font-family: "Trebuchet MS Regular";
+    src: url("fonts/Trebuchet-MS-Regular_.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 1023px;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+#header{
+    /border: 1px solid black;
+    width: 1023px;
+    margin: 40px auto 0;
+    position: relative;
+    padding-bottom: 78px;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+.logo, nav{
+    display: inline-block;
+    vertical-align: top;
+}
+.logo{
+    /border: 1px solid red;
+    float: left;
+    width: 25%;
+    margin-left: -5px;
+}
+nav{
+    display: inline-block;
+    float: right;
+    margin: 0 -60px 0 41px;
+    /border: 1px solid black;
+    vertical-align: top;
+    width: 70%;
+}
+#header nav a{
+    color: #989898;
+    font: 14px "OpenSans Semibold",sans-serif;
+    text-decoration: none;
+    padding: 0 17px 40px 17px;
+}
+#header nav li:hover a, #header menu li.active a {
+    color: #3070a8;
+    border-bottom: 4px solid #3070a8;
+}
+#banner{
+    border: 1px solid transparent;
+    /height: 584px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background: rgba(0, 0, 0, 0) url("../img/banner1.jpg") no-repeat scroll 0 0/cover;
+}
+.banner{
+    /border: 1px solid red;
+    width: 1023px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+p.banner-title{
+    font: 36px "Futura Bt Book", "Trebuchet MS Bold", Arial, sans-serif;
+    margin: 0 0 0 65px;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 135px 0 19px;
+}
+.banner-title span{
+    font: 48px "Futura Bt Bold", bold,sans-serif;
+    text-transform: uppercase;
+}
+.banner-text {
+    font: 20px "Calibri Italic", italic,sans-serif;
+    line-height: 1.5;
+    margin-top: 21px;
+    /padding: 0 70px;
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+}
+.banner-button {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font: 16px "OpenSans Semibold",sans-serif;
+    margin: 35px auto 0;
+    padding: 17px 60px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.banner-button:hover {
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+}
+#services{
+    border: 1px solid red;
+    width: 1023px;
+    /height: 565px;
+    margin: 0 auto;
+}
+.services-wrap{
+    border: 1px solid black;
+    width: 1080px;
+    margin-left: -35px;
+    text-align: center;
+}
+.services-item{
+    display: inline-block;
+    width: 31%;
+    height: 400px;
+    border: 1px solid red;
+    vertical-align: top;
+    position: relative;
+    line-height: 1.5em;
+    padding: 0 9px 0 9px;
+}
+p.services-title{
+    font: 28px "Trebuchet MS Bold", bold,sans-serif;
+    color: #41525c;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+h2.services-title{
+    font: 28px "Futura Bt Book", sans-serif;
+    text-transform: uppercase;
+    color: #3070a8;
+    letter-spacing: 1px;
+}
+p.services-text{
+    margin: 0 10px 0 10px;
+    font: 14px "Open Sans", sans-serif;
+    line-height: 1.5em;
+    color: #999;
+    text-align: center;
+
+}
