@@ -19,6 +19,10 @@
     src: url("fonts/Open%20Sans%20Regular.ttf");
 }
 @font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans.ttf");
+}
+@font-face {
     font-family: "Calibri Italic";
     src: url("fonts/Calibri-Italic.ttf");
 }
@@ -40,15 +44,14 @@ body{
     width: 100%;
 }
 #header{
-    /border: 1px solid black;
     width: 1023px;
     margin: 40px auto 0;
     position: relative;
-    padding-bottom: 78px;
+    padding-bottom: 79px;
 }
 nav ul li{
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 18px;
     text-transform: uppercase;
     vertical-align: top;
 }
@@ -57,38 +60,33 @@ nav ul li{
     vertical-align: top;
 }
 .logo{
-    /border: 1px solid red;
     float: left;
     width: 25%;
-    margin-left: -5px;
 }
 nav{
     display: inline-block;
     float: right;
-    margin: 0 -60px 0 41px;
-    /border: 1px solid black;
+    margin: 0;
     vertical-align: top;
     width: 70%;
 }
 #header nav a{
-    color: #989898;
+    color: #adadad;
     font: 14px "OpenSans Semibold",sans-serif;
     text-decoration: none;
-    padding: 0 17px 40px 17px;
+    padding: 0 16px 40px 16px;
 }
 #header nav li:hover a, #header menu li.active a {
     color: #3070a8;
     border-bottom: 4px solid #3070a8;
 }
 #banner{
-    border: 1px solid transparent;
-    /height: 584px;
+    height: 584px;
     margin: 0 auto;
     padding-bottom: 80px;
     background: rgba(0, 0, 0, 0) url("../img/banner1.jpg") no-repeat scroll 0 0/cover;
 }
 .banner{
-    /border: 1px solid red;
     width: 1023px;
     margin: 0 auto;
     text-align: center;
@@ -97,7 +95,7 @@ nav{
 }
 p.banner-title{
     font: 36px "Futura Bt Book", "Trebuchet MS Bold", Arial, sans-serif;
-    margin: 0 0 0 65px;
+    margin: 0 auto;
     line-height: 1.5em;
     text-align: center;
     padding: 135px 0 19px;
@@ -109,8 +107,7 @@ p.banner-title{
 .banner-text {
     font: 20px "Calibri Italic", italic,sans-serif;
     line-height: 1.5;
-    margin-top: 21px;
-    /padding: 0 70px;
+    padding: 0 70px;
     text-align: center;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     letter-spacing: 1px;
@@ -132,26 +129,21 @@ p.banner-title{
     background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
 }
 #services{
-    border: 1px solid red;
     width: 1023px;
-    /height: 565px;
     margin: 0 auto;
 }
 .services-wrap{
-    border: 1px solid black;
-    width: 1080px;
-    margin-left: -35px;
+    width: 1023px;
     text-align: center;
 }
 .services-item{
     display: inline-block;
-    width: 31%;
+    width: 32%;
     height: 400px;
-    border: 1px solid red;
     vertical-align: top;
     position: relative;
     line-height: 1.5em;
-    padding: 0 9px 0 9px;
+    padding-left: 10px;
 }
 p.services-title{
     font: 28px "Trebuchet MS Bold", bold,sans-serif;
@@ -166,11 +158,417 @@ h2.services-title{
     color: #3070a8;
     letter-spacing: 1px;
 }
-p.services-text{
-    margin: 0 10px 0 10px;
-    font: 14px "Open Sans", sans-serif;
-    line-height: 1.5em;
-    color: #999;
+.services-text{
+    margin: 0;
+    font: 14px/1.8 "Open Sans", sans-serif;
+    color: #a7a7a7;
     text-align: center;
+    word-spacing: 2px;
+    width: 325px;
+}
+#middle{
+    margin: 0 auto;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0) url("../img/banMiddle.jpg") no-repeat scroll 0 0/cover;
+    padding-bottom: 30px;
+}
+.middle-wrapper{
+    width: 1023px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 0 57px;
+}
+.middle-title{
+    font: 26px/1.7 "Futura Bt Book", sans-serif;
+    margin: 0;
+    padding: 79px 0 11px;
+    text-transform: uppercase;
+    color: #ee8129;
+    width: 685px;
+}
+.middle-text{
+    color: #fff;
+    font: 19px "Open Sans Italic", sans-serif;
+    margin: 0 0 33px;
+    width: 685px;
+}
+#middle ul{
+    margin: 0;
+    width: 610px;
+    list-style-type: none;
+}
+#middle ul li {
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 14px/2 "Open Sans",sans-serif;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+}
+#middle ul li:hover {
+    color: #3070a8;
+}
+#middle ul li::before {
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    content: "";
+    float: left;
+    margin: 10px 0 0 -20px;
+}
+#middle ul li:hover::before {
+    border-color: #3070a8;
+}
+#pricing{
+    width: 1023px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.pricing-title{
+    font: 30px/1 "Trebuchet MS Bold", sans-serif;
+    text-align: center;
+    color: #41525c;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.pricing-wrapper{
+    margin-left: 75px;
+    padding: 40px 0;
+}
+.pricing-item{
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.pricing-item:nth-of-type(2) {
+    border: 4px solid #EE8129;
+    width: 286px;
+    box-shadow: 0 0 13px 0 rgba(8, 116, 178, 0.5);
+    position: relative;
+}
+.pricing-item:nth-of-type(1) .pricing-header {
+    background: #37c2d3;
+}
 
+.pricing-item:nth-of-type(2) .pricing-header {
+    background: #EE8129;
+}
+
+.pricing-item:nth-of-type(3) .pricing-header {
+    background: #1cb79a;
+}
+
+.pricing-item:nth-of-type(1) .pricing-header,
+.pricing-item:nth-of-type(3) .pricing-header {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.pricing-item:nth-of-type(1),
+.pricing-item:nth-of-type(3) {
+    border: 1px solid #e8eaec;
+    width: 289px;
+}
+
+.pricing-item:nth-of-type(1) {
+    margin-right: -8px;
+}
+
+.pricing-item:nth-of-type(3) {
+    margin-left: -8px;
+}
+.pricing-header .title {
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 23px 10px;
+    margin: 0;
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.pricing-item:nth-of-type(1) .pricing-header .title,
+.pricing-item:nth-of-type(3) .pricing-header .title {
+    padding: 20px 10px 13px;
+}
+
+.pricing-in {
+    padding: 19px 14px 30px;
+}
+
+.pricing-item:nth-of-type(1) .pricing-in,
+.pricing-item:nth-of-type(3) .pricing-in {
+    padding: 19px 14px 23px;
+}
+
+.pricing-in .title {
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 24px;
+    color: #3f4042;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+}
+
+.pricing-in .price {
+    position: relative;
+    font-family: "Futura Bt Bold", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: #35495a;
+    width: 150px;
+    height: 75px;
+    line-height: 60px;
+    padding: 6px 13px;
+    box-sizing: border-box;
+    letter-spacing: -0.05em;
+    margin: 0 auto 26px;
+}
+
+.pricing-in .price span {
+    position: absolute;
+    font-family: "Futura Bt Book", sans-serif;
+}
+
+.pricing-in .price span:first-of-type {
+    top: 6px;
+    left: 0;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.pricing-in .price span:last-of-type {
+    bottom: 0;
+    right: -5px;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    letter-spacing: -0.03em;
+}
+
+.pricing-in ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.pricing-in li {
+    position: relative;
+    font-family: "Trebuchet MS Regular", sans-serif;
+    font-size: 15px;
+    color: #888c94;
+    padding: 8px 20px 8px 63px;
+    margin-bottom: 2px;
+}
+
+.pricing-in li:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 33px;
+    width: 13px;
+    height: 15px;
+    background: url("../img/task1.png");
+}
+
+.pricing-in li:nth-child(odd) {
+    background: #edf5fd;
+}
+
+.pricing-in li:nth-child(even) {
+    background: #f5f5f6;
+}
+
+.pricing-item button {
+    width: 252px;
+    padding: 11px;
+    box-sizing: border-box;
+    margin: 0 4px;
+    font-family: "Trebuchet MS Bold", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pricing-item:nth-of-type(1) button,
+.pricing-item:nth-of-type(3) button {
+    background: #3371a6;
+    box-shadow: inset 0 0 #16436a, 0 3.5px #16436a;
+    transition: .2s;
+}
+
+.pricing-item:nth-of-type(2) button {
+    background: #EE8129;
+    box-shadow: inset 0 0 #b3560b, 0 3.5px #b3560b;
+    transition: .2s;
+}
+
+.pricing-item:nth-of-type(1) button:hover,
+.pricing-item:nth-of-type(3) button:hover {
+    background: #4387a6;
+}
+
+.pricing-item:nth-of-type(2) button:hover {
+    background: #ee9d3a;
+}
+.pricing-item:nth-of-type(2) button:active{
+    box-shadow: inset 0 0 #b3560b, 0 1.5px #b3560b;
+    color: #eee;
+    background: #ee8129;
+    transform: translate(0,4px);
+}
+.pricing-item:nth-of-type(1) button:active,
+.pricing-item:nth-of-type(3) button:active {
+    box-shadow: inset 0 0 #16436a, 0 1.5px #16436a;
+    color: #eee;
+    background: #3371a6;
+    transform: translate(0,4px);
+}
+#testimonials{
+    margin: 0 auto;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0) url("../img/task3.jpg") no-repeat scroll 0 0/cover;
+    padding-bottom: 30px;
+}
+.testimonials-wrapper{
+    width: 1023px;
+    margin: 0 auto;
+}
+h2.wrap-title-customer{
+    float: right;
+}
+.wrap-item {
+    display: inline-block;
+    width: 45%;
+    margin: 0 48px 50px 0;
+    vertical-align: top;
+}
+
+.wrap-title, .wrap-title-customer{
+    display: inline-block;
+    font: 13px "Open Sans Italic", sans-serif;
+    color: #3070a8;
+}
+.wrap-img{
+    position: absolute;
+}
+.wrap-inner-text{
+    border: 1px solid white;
+    background: white;
+    margin: 0 0 0 125px;
+    padding: 0 0 0 15px ;
+    width: 335px;
+    font: 13px "Open Sans Regular", sans-serif;
+    color: #666;
+    text-align: left;
+}
+.wrap-inner-title-all{
+    border-bottom: 1px dotted #666;
+    width: 90%;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0px;
+}
+.testimonials-title{
+    font-family: "Futura Bt Bold", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #3170a8;
+    letter-spacing: .5pt;
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 1023px;
+    margin: 0 auto;
+}
+.testimonials-title span{
+    color: #ee8129;
+    font-family: "Futura Bt Book", sans-serif;
+    font-weight: normal;
+}
+.wrap-text{
+    margin-top: 5px;
+}
+.wrap-inner-text::before {
+    content: '';
+    position: absolute;
+    margin-left: -44px;
+    margin-top: 38px;
+    border: 12px solid transparent;
+    border-right: 17px solid white;
+}
+#contact{
+    background: rgba(0, 0, 0, 0) url("../img/banFooter.jpg") no-repeat scroll right center;
+    height: 345px;
+    color: rgba(0, 0, 0, 0.5);
+    font: 14px "OpenSans Semibold",sans-serif;
+}
+.contact-wrapper{
+    border: 1px solid transparent;
+    width: 1023px;
+    margin: 0 auto;
+    padding-bottom: 26px;
+}
+.contacts-address {
+    line-height: 2;
+    padding: 17px 0 8px 64px;
+    position: relative;
+}
+.contacts-address img {
+    left: 7px;
+    position: absolute;
+}
+.contacts-phone {
+    padding: 0 0 10px 63px;
+    position: relative;
+}
+.contacts-phone img {
+    left: 6px;
+    position: absolute;
+    top: -5px;
+}
+.contacts-email {
+    padding: 0 0 25px 64px;
+    position: relative;
+}
+.contacts-email img {
+    left: 4px;
+    position: absolute;
+    top: 5px;
+}
+.socials {
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+.social {
+    display: inline-block;
+    padding-right: 17px;
+}
+#footer{
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: #3070a8;
+    color: #fff;
+    font: 14px/1 "Open Sans Regular", sans-serif;
+    text-align: center;
+}
+.footer-wrapper {
+    margin: 0 auto;
+    width: 1023px;
+}
+.footer-company span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+.footer-design {
+    padding-bottom: 5px;
+}
+.footer-design span {
+    color: #000;
+    font-weight: bold;
 }
