@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.search{
+    background: #ffcc66 none repeat scroll 0 0;
+    width: 50%;
+    height: 45px;
+    padding: 5px;
+    position: relative;
+    margin: 20px 50px;
+}
+.wrap::after{
+    border-color: transparent transparent transparent #ffcd5d;
+    border-image: none;
+    border-style: solid;
+    border-width: 27px 27px 27px 20px;
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: block;
+}
+.input{
+    position: absolute;
+    left: 5px;
+    right: 95px;
+    top: 5px;
+}
+.button{
+    position: absolute;
+    right: 14px;
+    top: 5px;
+}
+input{
+    display: inline-block;
+}
+input[type="text"]{
+    width: 100%;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+label, input[type="submit"] {
+    font-size: 0.9em;
+}
+.checkbox{
+    position: absolute;
+    top: 31px;
+    left: 1px;
+}
