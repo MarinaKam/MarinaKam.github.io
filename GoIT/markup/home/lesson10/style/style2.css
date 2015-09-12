@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+/min-width: 1140px;
+}
+a {
+    text-decoration: none;
+}
+.portfolio-content{
+    padding-top: 5px;
+    padding-bottom: 35px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+
+}
+h2{
+    font-size: 41pt;
+    font-weight: normal;
+    line-height: .8em;
+    color: #2d3950;
+}
+h3{
+    font-size: 15pt;
+    font-weight: normal;
+    color: #909090;
+    line-height: .8em;
+}
+#portfolio{
+    margin: 0 auto;
+    width: 100%;
+    background: #f6f9f9;
+}
+.wrapper-portfolio{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 0 70px;
+}
+.portfolio-img div.img{
+    display: inline-block;
+    vertical-align: top;
+    margin: 8px;
+}
+.portfolio-img a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.img{
+    position: relative;
+}
+.portfolio-img-button{
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    background-color: rgba(57, 174, 247, .7);
+    opacity: 0;
+    top: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+}
+.img:hover .portfolio-img-button {
+/-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+/filter: alpha(opacity=100);
+    opacity: 1;
+}
+.portfolio-img .portfolio-img-button .button{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+
+}
+.img-button{
+    top: 100px;
+    left: 130px;
+}
+.img:hover{
+    opacity: 1;
+}
+a.img-button:hover{
+    background: rgba(57, 174, 247, .7);
+    box-shadow: 0 1px 2px rgba(57, 174, 247, .7);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+a.img-button:active {
+    background: rgba(238,238,238,.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
