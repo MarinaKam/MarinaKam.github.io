@@ -129,9 +129,15 @@ a.img-button:active {
     pointer-events: auto;
     transition: opacity .3s ease-in-out;
 }
+.overlay-wrap{
+    border: 1px solid transparent;
+    max-width: 1145px;
+    margin: auto;
+    position: relative;
+}
 .overlay-wrap-big-f{
-    /position: relative;
-    width: 1145px;
+    position: relative;
+    max-width: 1145px;
     min-width: 380px;
     margin: 149px auto;
     transition-delay: 1.3s;
@@ -143,8 +149,8 @@ a.img-button:active {
 }
 .overlay-wrap-x{
     position: absolute;
-    right: 12%;
-    top: 175px;
+    right: 2%;
+    top: 125px;
     width: 40px;
     height: 40px;
     background: rgba(247,76,38,1);
@@ -180,5 +186,7 @@ a.img-button:active {
 div .portfolio-img .img:first-child{
     z-index: 2;
     float: left;
+    position: relative;
+    
 }
 
