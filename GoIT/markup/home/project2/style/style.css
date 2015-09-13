@@ -31,6 +31,7 @@ h3{
 #portfolio{
     margin: 0 auto;
     width: 100%;
+    min-width: 380px;
     background: #f6f9f9;
 }
 .wrapper-portfolio{
@@ -178,5 +179,6 @@ a.img-button:active {
 }
 div .portfolio-img .img:first-child{
     z-index: 2;
+    float: left;
 }
 
