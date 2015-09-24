@@ -273,7 +273,7 @@ ul.menu_nav>li:last-child>a:hover {
     opacity: 1;
     height: 53px;
 }
-[class^="scroll"] input:nth-of-type(1):checked ~ div img {right: 0px;}
+[class^="scroll"] input:nth-of-type(1):checked ~ div img {right: 0;}
 [class^="scroll"] input:nth-of-type(2):checked ~ div img {right: 292px;}
 [class^="scroll"] input:nth-of-type(3):checked ~ div img {right: 584px;}
 [class^="scroll"] input:nth-of-type(4):checked ~ div img {right: 876px;}
@@ -591,18 +591,16 @@ ul.menu_nav>li:last-child>a:hover {
     margin: 0 0 0 35px;
 }
 .korpus_list li:before {
-    content: "";
-    position: absolute;
-    display: block;
-    opacity: .5;
-    top: 5px;
-    left: -15px;
-    width: 5px;
-    height: 89px;
-    background: url("img/bulet.png");
+    color: #cbcbcb;
+    content: ">";
+    font-size: 7px;
+    font-weight: 700;
+    left: -10px;
+    position: relative;
+    top: -1px;
 }
 .korpus_list>li.korpus_list_point{
-    font: 12px/1.4 'Arial', normal,sans-serif;
+    font: 12px/1.5 'Arial', normal,sans-serif;
     padding-bottom: 3px;
     color: #333;
     list-style-type: none;
