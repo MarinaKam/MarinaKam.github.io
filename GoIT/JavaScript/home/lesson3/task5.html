@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var line=8;
+        var board='';
+        for(y=0; y<line; y++){
+            for(x=0; x<line; x++){
+                if((x+y)%2==0){
+                    board+='#';
+                }
+                else{
+                    board+=' ';
+                }
+            }
+            board+='\n';
+        }
+        console.log(board);
+
+    </script>
+
+</body>
+</html>
