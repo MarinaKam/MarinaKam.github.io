@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var arr = [];
+		for (var i = 0; i < 5; i++) {
+			arr[i] = prompt('Введите имя', '');
+		};
+		alert(arr);
+		var userName = prompt('Введите имя пользователя', '');
+		var isName = false;
+		for (var i = 0; i < arr.length; i++) {
+			if (userName === arr[i]){
+					isName = true;
+				} 
+		}
+		if (isName) {
+			alert(userName + ' вы успешно вошли!');
+		} else {
+			alert('Такого не существует');
+		}
+
+	</script>
+</body>
+</html>
