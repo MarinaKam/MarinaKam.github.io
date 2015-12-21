@@ -1,0 +1,46 @@
+form{
+	margin-left: 100px;
+	letter-spacing: 1px;
+}
+h1 {
+	text-align: center;
+}
+label{
+	display: block;
+	margin-left: 30px;
+}
+.b-button {
+	margin: 50px 0 0 185px;
+	background: #cfe2f3;
+	border: 2px solid black; 
+	border-radius: 2px;
+	font-size: 15px;
+	height: 52px;
+	width: 410px;
+	cursor: pointer;
+}
+input[type="checkbox"]{
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+	border: 2px solid rgba(0,0,0,1);
+	border-radius: 2px;
+	background: #cae4fb;
+	outline: none;
+	margin: 2px;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	display: inline-block;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked:before{
+	content: "";
+	display: block;
+	width: 6px;
+	height: 12px;
+	border: 0 solid rgba(0,0,0,1);
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotateZ(45deg);
+	margin: -6px 3px;
+}
+
