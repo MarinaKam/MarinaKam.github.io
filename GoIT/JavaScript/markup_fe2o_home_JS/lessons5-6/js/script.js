@@ -10,11 +10,12 @@ function myStopTimer() {
 }
 function myStartTimer() {
   tm++;
-  if (tm == 1) setInterval(function(){
+  if (tm == 1) {
+    setInterval(function(){
       if (init == 0) ms++;
-      if (ms>=1000){
+      if (ms>=100){
         s++;
-        ms%=1000;
+        ms%=100;
       }
       if (s>=60) {
         m++;
@@ -24,14 +25,17 @@ function myStartTimer() {
         h++;
         m%=60;
       }
-      if (init == 0)
-      document.getElementById('timerDemo').innerHTML = (h-h%10)/10 + '' + h%10 + ':' + 
-      (m-m%10)/10 + '' + m%10 + ':' + (s-s%10)/10 + s%10  + '<span>' + (ms-ms%10)/10 + ms%10 + '</span>';},-500000); 
+      if (init == 0) 
+        t = document.getElementById('timerDemo'); 
+        t.innerHTML = (h-h%10)/10 + '' + h%10 + ':' + (m-m%10)/10 + '' + m%10 + ':' + (s-s%10)/10 + s%10  + '<span>' + (ms-ms%10)/10 + ms%10 + '</span>';},10); 
+  
+      }
+      
     init = 0; 
 } 
 function myResetTimer() {
-  ms = 0;
-  clearTimeout(myStartTimer());
+  ms = s = m = h = 0;
+  clearInterval(myStartTimer());
   document.getElementById('timerDemo').innerHTML = '00:00:00<span>00</span>';
   myStopTimer();
 }
