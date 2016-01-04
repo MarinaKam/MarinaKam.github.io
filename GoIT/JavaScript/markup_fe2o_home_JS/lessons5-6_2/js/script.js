@@ -33,13 +33,12 @@ var app = {
 
 		return element;
 	},
-	createButtons: function(buttons, even){
-
+	createButtons: function(buttons){
 		var arr = ['Start', 'Pause', 'Reset'];
-
 		for (var i = 0; i < buttons; i++) {
 			this.createElement({
 				tagName: 'button',
+				buttonType: 'button',
 				className: 'but' + (i + 1),
 				value: '',
 				buttonOnclick: 'onClickEven()',
@@ -80,26 +79,19 @@ var form = app.createElement({
 app.createButtons(3, 3);
 
 var t;
-var tm = 0;
-var init = 1;
+var init = 0;
 var h = 0;
 var m = 0;
 var s = 0;
 var ms = 0;
 
-// var but2 = document.querySelector('.but2');
-// but2.addEventListener('click', myStopTimer);
-
 function myStopTimer() {
   init = 1;
 }
 
-// var but1 = document.querySelector('.but1');
-// but1.addEventListener('click', myStartTimer);
-
 function myStartTimer() {
-  tm++;
-  if (tm == 1) {
+  init++;
+  if (init == 1) {
     setInterval(function(){
       if (init == 0) ms++;
       if (ms>=100){
@@ -117,14 +109,9 @@ function myStartTimer() {
       if (init == 0) 
         t = document.getElementById('timerDemo'); 
         t.innerHTML = (h-h%10)/10 + '' + h%10 + ':' + (m-m%10)/10 + '' + m%10 + ':' + (s-s%10)/10 + s%10  + '<span>' + (ms-ms%10)/10 + ms%10 + '</span>';},10); 
-  
-      }
-      
+      }     
     init = 0; 
 } 
-
-// var but3 = document.querySelector('.but3');
-// but3.addEventListener('click', myResetTimer);
 
 function myResetTimer() {
   ms = s = m = h = 0;
@@ -137,7 +124,6 @@ function onClickEven() {
 	document.querySelector('.but1').onclick = function() {myStartTimer()};
 	document.querySelector('.but2').onclick = function() {myStopTimer()};
 	document.querySelector('.but3').onclick = function() {myResetTimer()};
-	
 }
 
 

@@ -1,6 +1,5 @@
 var t;
-var tm = 0;
-var init = 1;
+var init = 0;
 var h = 0;
 var m = 0;
 var s = 0;
@@ -9,8 +8,8 @@ function myStopTimer() {
   init = 1;
 }
 function myStartTimer() {
-  tm++;
-  if (tm == 1) {
+  init++;
+  if (init == 1) {
     setInterval(function(){
       if (init == 0) ms++;
       if (ms>=100){
