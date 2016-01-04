@@ -35,13 +35,14 @@ var app = {
 	},
 	createButtons: function(buttons){
 		var arr = ['Start', 'Pause', 'Reset'];
+		var even = ['myStartTimer()', 'myStopTimer()', 'myResetTimer()'];
 		for (var i = 0; i < buttons; i++) {
 			this.createElement({
 				tagName: 'button',
 				buttonType: 'button',
 				className: 'but' + (i + 1),
 				value: '',
-				buttonOnclick: 'onClickEven()',
+				buttonOnclick: even[i],
 				content: arr[i],
 				parentElement: form
 			});
@@ -71,7 +72,7 @@ app.createElement({
 	parentElement: div
 });
 
-var form = app.createElement({
+var form = app.createElement({	
 	tagName: 'form',
 	parentElement: div
 });
@@ -120,11 +121,7 @@ function myResetTimer() {
   myStopTimer();
 }
 
-function onClickEven() {
-	document.querySelector('.but1').onclick = function() {myStartTimer()};
-	document.querySelector('.but2').onclick = function() {myStopTimer()};
-	document.querySelector('.but3').onclick = function() {myResetTimer()};
-}
+
 
 
 
