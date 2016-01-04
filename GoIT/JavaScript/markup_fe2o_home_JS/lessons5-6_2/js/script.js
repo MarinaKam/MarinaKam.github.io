@@ -24,8 +24,11 @@ var app = {
 		if (params.value) {
 			element.value = params.value;
 		}
-		if (params.onclick) {
-			element.onclick = params.onclick;
+		if (params.buttonType){
+			element.setAttribute('type', params.buttonType);
+		}
+		if (params.buttonOnclick) {
+			element.setAttribute('onclick', params.buttonOnclick);
 		};
 
 		return element;
@@ -39,6 +42,7 @@ var app = {
 				tagName: 'button',
 				className: 'but' + (i + 1),
 				value: '',
+				buttonOnclick: 'onClickEven()',
 				content: arr[i],
 				parentElement: form
 			});
@@ -135,26 +139,6 @@ function onClickEven() {
 	document.querySelector('.but3').onclick = function() {myResetTimer()};
 	
 }
-
-
-// document.getElementById("demo").onclick = function() {myFunction()};
-// var but1 = document.getElementsByClassName('but1');
-// but1.onclick = myStartTimer();
-// var button = document.getElementsByTagName('button');
-// button.onclick = myStartTimer();
-	// if (button.content =='Start') {
-	// 	myStartTimer();
-	// };
-	// if (button.content =='Pause') {
-	// 	myStopTimer();
-	// };
-	// if (button.content == 'Reset') {
-	// 	myResetTimer();
-	// }
-	//button.onclick = myStartTimer();
-	
-// }
-
 
 
 
