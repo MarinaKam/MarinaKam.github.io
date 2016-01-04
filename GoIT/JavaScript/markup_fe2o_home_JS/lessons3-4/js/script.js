@@ -2,7 +2,7 @@ var app = {
 	createElement: function(params) {
 		var element = document.createElement(params.tagName);
 
-		if (params.tagName){
+		if (params.inputType){
 			element.setAttribute('type', params.inputType);
 		}
 
