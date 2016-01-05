@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("fonts/MyriadProRegular.ttf");
+}
+.l-body{
+    margin: 0;
+    padding: 0;
+    background: url("../images/l-body.png") repeat;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+ul,li {
+    list-style:none;
+}
+.l-page{
+    width: 972px;
+    position: relative;
+    background: white;
+    margin: 60px auto;
+    box-sizing: border-box;
+}
+.l-page:before, .l-page:after {
+    z-index: -3;
+    position: absolute;
+    content: "";
+    bottom: 7px;
+    left: 15px;
+    width: 50%;
+    top: 70%;
+    max-width:500px;
+    background: #999;
+    -webkit-box-shadow: 0 15px 9px #999;
+    -moz-box-shadow: 0 15px 9px #999;
+    box-shadow: 0 15px 9px #999;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+.l-page:after {
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    left: 470px;
+}
+.l-page-wrapper{
+    position: relative;
+}
+.l-page-wrapper, .l-page-wrapper::before, .l-page-wrapper::after{
+    width: 972px;
+    padding-bottom: 40px;
+    background: white;
+    margin: 62px auto 84px auto;
+    border: 0 solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 1px #ddd;
+    border-bottom: 2px inset #fff;
+}
+.l-page-wrapper::before {
+    position: absolute;
+    top: -59px;
+    left: 0;
+    z-index: -1;
+    content: '';
+
+}
+.l-page-wrapper::after {
+    position: absolute;
+    z-index: -2;
+    top: -56px;
+    left: 0;
+    content: '';
+}
+
+/* Tabs */
+.l-tabs-wrap {
+    padding: 5px;
+    color: #666;
+    font: 17px/1 'MyriadProRegular', normal, sans-serif;
+}
+h2 {
+    padding-left: 20px; 
+}
+#tabs-wrap {
+    position: relative;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #fdfdfd;
+}
+.tabs {
+    height: 45px;
+    margin: 3px 3px 0 3px;
+    overflow: hidden; 
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: linear-gradient(#e4e4e4, #cecece);
+}
+.tabs li {
+    display: inline-block;   
+}
+.tabs li a { 
+    position: absolute;
+    width: 200px;
+    border-top: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: -6px;
+    background: linear-gradient(#efefef, #f1f1f1);
+    display: block; 
+    padding: 8px 16px; 
+    font-size: 18px; 
+    line-height: 21px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #aaa;
+}
+.tab-2 {
+    margin-left: 233px;
+}
+.tab-3 {
+    margin-left: 234px;
+}
+.tabs li a:hover {
+    color: #ccc;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+.tabs li a.active {
+    color: #212121;
+    background: #fdfdfd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #fdfdfd;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+.tabs-content {
+    padding: 20px; 
+    font-size: 16px; 
+    line-height: 21px;
+}
+
+/*Form*/
+
+.l-form {
+    position: relative;
+    margin: 10px 5px;
+    color: #666;
+    font: 15px/1 'MyriadProRegular', normal, sans-serif;
+}
+fieldset {
+    border: 2px groove #aaa;
+    padding: 10px 0 10px 20px;
+}
+label {
+
+}
+input {
+    margin: 0 0 20px 20px;
+}
+[name^="address"] {
+    margin-left: 30px;
+}
+.b-button-link {
+    margin: 15px 0 0 0;
+}
+.b-button {
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: linear-gradient(#ececec, #eee);
+    color: #666;
+    font: 15px/1 'MyriadProRegular', normal, sans-serif;
+}
+.b-button:hover {
+    color: #212121;
+}
+.b-button:active {
+    background: white;
+}
+.first-name, .last-name, .address {
+    position: absolute;
+    display: none;
+    margin-left: 250px;
+    padding: 4px 0 3px 5px;
+    width: 240px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px #d8d8d8;
+}
+.first-name {
+    margin-top: -133px;
+}
+.last-name {
+    margin-top: -94px;
+    
+}
+.address{
+    margin-top: -54px;
+}
+
