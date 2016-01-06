@@ -76,7 +76,6 @@ ul,li {
     left: 0;
     content: '';
 }
-
 /* Tabs */
 .l-tabs-wrap, .l-form {
     padding: 15px;
@@ -112,7 +111,7 @@ ul,li {
     margin: -6px;
     background: linear-gradient(#efefef, #f1f1f1);
     display: block; 
-    padding: 8px 16px; 
+    padding: 8px 16px 7px 16px; 
     font-size: 18px; 
     line-height: 21px; 
     border-top-left-radius: 5px;
@@ -139,7 +138,7 @@ ul,li {
     background: #fdfdfd;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 2px solid #fdfdfd;
+    border-bottom: 3px solid #fdfdfd;
     border-top: 1px solid #aaa;
     border-left: 1px solid #aaa;
     border-right: 1px solid #aaa;
@@ -149,9 +148,7 @@ ul,li {
     font-size: 16px; 
     line-height: 21px;
 }
-
 /*Form*/
-
 .l-form {
     position: relative;
     margin: 10px 5px;
@@ -200,13 +197,13 @@ input {
     box-shadow: 0 0 3px 1px #d8d8d8;
 }
 .first-name {
-    margin-top: -123px;
+    margin-top: -124px;
 }
 .last-name {
-    margin-top: -84px;
+    margin-top: -85px;
     
 }
 .address{
-    margin-top: -44px;
+    margin-top: -45px;
 }
 
