@@ -78,16 +78,14 @@ ul,li {
 }
 
 /* Tabs */
-.l-tabs-wrap {
-    padding: 5px;
+.l-tabs-wrap, .l-form {
+    padding: 15px;
     color: #666;
     font: 17px/1 'MyriadProRegular', normal, sans-serif;
 }
-h2 {
-    padding-left: 20px; 
-}
 #tabs-wrap {
     position: relative;
+    margin-top: 10px;
     border: 1px solid #aaa;
     border-radius: 5px;
     background: #fdfdfd;
@@ -121,6 +119,9 @@ h2 {
     border-top-right-radius: 5px;
     border-bottom: 1px solid #aaa;
 }
+.tab-1 {
+    margin-left: 20px;
+}
 .tab-2 {
     margin-left: 233px;
 }
@@ -138,7 +139,7 @@ h2 {
     background: #fdfdfd;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 1px solid #fdfdfd;
+    border-bottom: 2px solid #fdfdfd;
     border-top: 1px solid #aaa;
     border-left: 1px solid #aaa;
     border-right: 1px solid #aaa;
@@ -191,7 +192,7 @@ input {
 .first-name, .last-name, .address {
     position: absolute;
     display: none;
-    margin-left: 260px;
+    margin-left: 250px;
     padding: 4px 0 3px 5px;
     width: 240px;
     border: 2px solid #aaa;
@@ -199,13 +200,13 @@ input {
     box-shadow: 0 0 3px 1px #d8d8d8;
 }
 .first-name {
-    margin-top: -133px;
+    margin-top: -123px;
 }
 .last-name {
-    margin-top: -94px;
+    margin-top: -84px;
     
 }
 .address{
-    margin-top: -54px;
+    margin-top: -44px;
 }
 
