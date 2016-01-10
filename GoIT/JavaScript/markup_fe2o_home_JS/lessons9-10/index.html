@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lessons9-10</title>
+    <link href="style/reset.css" rel="stylesheet">
+    <link href="style/menu.css" rel="stylesheet">
+	<link rel="stylesheet" href="style/jcarousel.connected-carousels.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:700italic,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style/selectric.css">
+	<link href="style/style.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src=" http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<script src="js/jquery.selectric.min.js"></script>
+	<script src="js/jcarousel.connected-carousels.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-nav">
+				<p class="header-nav-text">January 2015,  Lessons 9 - 10 <span>Maryna Kam</span></p>
+			</div>
+			<div class="header-block">
+				<div class="header-logo">
+					<p class="header--logo">My first jQuery Carousel<span><a href="http://sorgalla.com/jcarousel/">http://sorgalla.com/jcarousel/</a></span>
+				</div>
+			</div>
+		</header>
+		<section class="page-wrap">
+			<div class="page-menu">
+		        <ul>
+		          <li class="page-menu-list"><a href="#">World News</a><p>From Around The Globe</p></li>
+		          <li class="page-menu-list"><a href="#">Celebrity News</a><p>Juicy Hollywood Gossip</p>
+		            <ul class="page-submenu1">
+		              <li class="page-submenu1-list"><a href="#">Element 1.1</a></li>
+		              <li class="page-submenu1-list"><a href="#">Element 1.2</a></li>
+		              <li class="page-submenu1-list"><a href="#">Element 1.3</a>
+		                <ul class="page-submenu2">
+		                  <li class="page-submenu2-list"><a href="#">Sub 1.1</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 1.2</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 1.3</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 1.4</a></li>
+		                </ul>
+		              </li>
+		              <li class="page-submenu1-list"><a href="#">Element 1.4</a></li>
+		            </ul>
+		          </li>
+		          <li class="page-menu-list"><a href="#">Technology</a><p>Apps, Internet & Gadgets</p>
+		            <ul class="page-submenu1">
+		              <li class="page-submenu1-list"><a href="#">Element 2.1</a></li>
+		              <li class="page-submenu1-list"><a href="#">Element 2.2</a>
+		                <ul class="page-submenu2">
+		                  <li class="page-submenu2-list"><a href="#">Sub 2.1</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 2.2</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 2.3</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 2.4</a></li>
+		                </ul>
+		              </li>
+		              <li class="page-submenu1-list"><a href="#">Element 2</a></li>
+		              <li class="page-submenu1-list"><a href="#">Element 2</a></li>
+		            </ul>
+		          </li>
+		          <li class="page-menu-list"><a href="#">Lifestyle Tips</a><p>Your Health & Happiness</p></li>
+		          <li class="page-menu-list"><a href="#">Entertainment</a><p>Movies, Music & Reviews</p>
+		            <ul class="page-submenu1">
+		              <li class="page-submenu1-list"><a href="#">Element 3.1</a></li>
+		              <li class="page-submenu1-list"><a href="#">Element 3.2</a></li>
+		              <li class="page-submenu1-list"><a href="#">Element 3.3</a></li>
+		              <li class="page-submenu1-list"><a href="#">Element 3.4</a>
+		                <ul class="page-submenu2">
+		                  <li class="page-submenu2-list"><a href="#">Sub 3.1</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 3.2</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 3.3</a></li>
+		                  <li class="page-submenu2-list"><a href="#">Sub 3.4</a></li>
+		                </ul>
+		              </li>
+		            </ul>
+		          </li>
+		          <li class="page-menu-list"><a href="#">Travel News</a><p>Travel News, Guides & Tips</p></li>
+		        </ul>
+		    </div>
+			<div class="page-connected-carousels">
+				<div class="connected-carousels">
+	                <div class="stage">
+	                    <div class="carousel carousel-stage">
+	                        <ul>
+	                            <li><img src="style/image/img1.jpg" width="600" height="400" alt=""></li>
+	                            <li><img src="style/image/img2.jpg" width="600" height="400" alt=""></li>
+	                            <li><img src="style/image/img3.jpg" width="600" height="400" alt=""></li>
+	                            <li><img src="style/image/img4.jpg" width="600" height="400" alt=""></li>
+	                            <li><img src="style/image/img5.jpg" width="600" height="400" alt=""></li>
+	                            <li><img src="style/image/img6.jpg" width="600" height="400" alt=""></li>
+	                        </ul>
+	                    </div>
+	                    <p class="photo-credits">
+	                        Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+	                    </p>
+	                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+	                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+	                </div>
+
+	                <div class="navigation">
+	                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+	                    <a href="#" class="next next-navigation">&rsaquo;</a>
+	                    <div class="carousel carousel-navigation">
+	                        <ul>
+	                            <li><img src="style/image/img1_thumb.jpg" width="50" height="50" alt=""></li>
+	                            <li><img src="style/image/img2_thumb.jpg" width="50" height="50" alt=""></li>
+	                            <li><img src="style/image/img3_thumb.jpg" width="50" height="50" alt=""></li>
+	                            <li><img src="style/image/img4_thumb.jpg" width="50" height="50" alt=""></li>
+	                            <li><img src="style/image/img5_thumb.jpg" width="50" height="50" alt=""></li>
+	                            <li><img src="style/image/img6_thumb.jpg" width="50" height="50" alt=""></li>
+	                        </ul>
+	                    </div>
+	                </div>
+            	</div>
+			</div>
+			<div class="select">
+				<h1>Select</h1>
+				<select id="basic">
+		          <option value="">Fruits</option>
+		          <option value="strawberries">Strawberries</option>
+		          <option value="mango">Mango</option>
+		          <option value="bananas">Bananas</option>
+		          <option value="watermelon">Watermelon</option>
+		          <option value="apples">Apples</option>
+		          <option value="grapes">Grapes</option>
+		          <option value="oranges">Oranges</option>
+		          <option value="pineapple">Pineapple</option>
+		          <option value="peaches">Peaches</option>
+		          <option value="cherries">Cherries</option>
+			    </select>
+			</div>
+			<div class="checkbox">
+				<h1>Checkbox with CSS</h1>
+				<div>
+					<input type="checkbox" id="test-check1" />
+					<label for="test-check1">Checkbox 1:</label>
+				</div>
+			</div>
+			<div class="checkboxJQuery">
+				<h1>Checkbox with jQuery</h1>
+				<p>Checkbox:</p><span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+			</div>
+		</section>
+		<section class="body">
+			<div class="bg-body-img"></div>
+			<div class="bg-body"></div>
+		</section>
+		<footer class="footer"></footer>
+	</div>
+	
+</body>
+</html>
