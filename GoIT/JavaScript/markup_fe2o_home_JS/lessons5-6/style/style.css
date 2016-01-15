@@ -37,8 +37,12 @@ h1 {
   box-sizing: border-box;
   display: inline-block;  
   cursor: pointer;  
+  font-family: Courier;
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
 }
-span {
+#ms {
   color: red;
   font-size: 40px;
 }
