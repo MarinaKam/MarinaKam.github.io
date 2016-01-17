@@ -26,28 +26,26 @@ $(function () {
         $('.address').fadeIn(1000);
     });
 
-    var $hint = $('.hint input');
-
-    $hint.hover(hoverIn, hoverOut);
+    // var $hint = $('.hint input');
 
 
-    // console.log(arr);
+    // function hoverIn() {
+    //     var $arr = ['.first-name', '.last-name', '.address'];
+    //     for (var i = 0; i < $arr; i++) {
+    //         $arr[i].fadeIn('fast');
+    //     };
+    // }
 
-    function hoverIn() {
-    var arr = ['.first-name', '.last-name', '.address'];
-        for (var i = 0; i < arr; i++) {
-            $(arr[i]).fadeIn('fast');
-        };
-        console.log(arr);
-    }
+    // function hoverOut() {
+    //     var $arr = ['.first-name', '.last-name', '.address'];
+    //     for (var i = 0; i < $arr; i++) {
+    //         $arr[i].fadeOut('fast');
+    //     };
+    // }
 
-    function hoverOut() {
-        var arr = ['.first-name', '.last-name', '.address'];
-        for (var i = 0; i < arr; i++) {
-            $(arr[i]).fadeOut('fast');
-        };
-    }
-
+    // $('#hint-first-name').hover(hoverIn(), hoverOut());
+    // $('#hint-last-name').hover(hoverIn(),hoverOut());
+    // $('#hint-address').hover(hoverIn(),hoverOut());
 
 
      // function hoverIn() {
@@ -77,24 +75,24 @@ $(function () {
 
 
 
-    // $('#hint-first-name').hover(function() {
-    //     $('.first-name').fadeIn('fast');
-    // }, function() {
-    //     $('.first-name').fadeOut('fast');
-    //   });
+    $('#hint-first-name').hover(function() {
+        $('.first-name').fadeIn('fast');
+    }, function() {
+        $('.first-name').fadeOut('fast');
+      });
 
-    // $('#hint-last-name').hover(function() {
-    //     $('.last-name').fadeIn('fast');
-    // }, function() {
-    //     $('.last-name').fadeOut('fast');
+    $('#hint-last-name').hover(function() {
+        $('.last-name').fadeIn('fast');
+    }, function() {
+        $('.last-name').fadeOut('fast');
 
-    // });
+    });
 
-    // $('#hint-address').hover(function() {
-    //     $('.address').fadeIn('fast');
-    // }, function() {
-    //     $('.address').fadeOut('fast');
+    $('#hint-address').hover(function() {
+        $('.address').fadeIn('fast');
+    }, function() {
+        $('.address').fadeOut('fast');
 
-    // });
+    });
 
 });
