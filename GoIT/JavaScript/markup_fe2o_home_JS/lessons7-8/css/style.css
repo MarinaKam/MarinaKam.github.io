@@ -90,6 +90,7 @@ ul,li {
     background: #fdfdfd;
 }
 .tabs {
+    /*position: relative;*/
     height: 45px;
     margin: 3px 3px 0 3px;
     overflow: hidden; 
@@ -120,12 +121,15 @@ ul,li {
 }
 .tab-1 {
     margin-left: 20px;
+
 }
 .tab-2 {
     margin-left: 233px;
+    /*display: none;*/
 }
 .tab-3 {
     margin-left: 234px;
+    /*display: none;*/
 }
 .tabs li a:hover {
     color: #ccc;
@@ -143,11 +147,15 @@ ul,li {
     border-left: 1px solid #aaa;
     border-right: 1px solid #aaa;
 }
-.tabs-content {
+#tabs-wrap div {
     padding: 20px; 
     font-size: 16px; 
     line-height: 21px;
 }
+.tab-content {
+    display: none;
+}
+
 /*Form*/
 .l-form {
     position: relative;
@@ -159,11 +167,9 @@ fieldset {
     border: 2px groove #aaa;
     padding: 10px 0 10px 20px;
 }
-label {
-
-}
 input {
     margin: 0 0 20px 20px;
+    /*display: block;*/
 }
 [name^="address"] {
     margin-left: 30px;
@@ -188,22 +194,23 @@ input {
 }
 .first-name, .last-name, .address {
     position: absolute;
+    z-index: 2;
     display: none;
-    margin-left: 250px;
+    margin: -43px 0 0 250px;
     padding: 4px 0 3px 5px;
     width: 240px;
     border: 2px solid #aaa;
     border-radius: 5px;
     box-shadow: 0 0 3px 1px #d8d8d8;
 }
-.first-name {
-    margin-top: -124px;
+/*.first-name {
+    margin-top: -45px;
 }
 .last-name {
-    margin-top: -85px;
+    margin-top: -45px;
     
 }
 .address{
     margin-top: -45px;
-}
+}*/
 

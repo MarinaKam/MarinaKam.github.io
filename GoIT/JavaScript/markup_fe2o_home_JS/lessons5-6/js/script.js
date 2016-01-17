@@ -80,7 +80,6 @@ var form = app.createElement({
 app.createButtons(3, 3);
 
 var timer;
-// var init = 0;
 var h = 0;
 var min = 0;
 var sec = 0;
