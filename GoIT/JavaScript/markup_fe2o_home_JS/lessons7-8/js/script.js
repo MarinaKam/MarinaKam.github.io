@@ -21,9 +21,9 @@ $(function () {
     var $form = $('.l-form');
     $form.on('click', '.b-button-link a', function(e) {
         e.preventDefault();
-        $('.first-name').fadeIn();
-        $('.last-name').fadeIn('slow');
-        $('.address').fadeIn(1000);
+        $('.hint1').fadeIn();
+        $('.hint2').fadeIn('slow');
+        $('.hint3').fadeIn(1000);
     });
 
     // var $hint = $('.hint input');
@@ -73,26 +73,45 @@ $(function () {
     //     $('.hint em').fadeOut('fast');
     // });
 
+    // var $hoverIn = function () {
+    //     for (var i = 0; i < arguments.length; i++) {
+    //     $('.hint').fadeIn('fast');
+    //     };
+    //     console.log('.hint' + (i+1));
+    // }
+
+    // var $hoverOut = function() {
+    //     for (var i = 0; i < arguments.length; i++) {
+    //     $('.hint').fadeOut('fast');
+    //     };
+    // }
+
+    // $('#hint-first-name').hover($hoverIn, $hoverOut);
+    // $('#hint-last-name').hover($hoverIn, $hoverOut);
+    // $('#hint-address').hover($hoverIn, $hoverOut);
+
 
 
     $('#hint-first-name').hover(function() {
-        $('.first-name').fadeIn('fast');
+        $('.hint1').fadeIn('fast');
     }, function() {
-        $('.first-name').fadeOut('fast');
+        $('.hint1').fadeOut('fast');
       });
 
     $('#hint-last-name').hover(function() {
-        $('.last-name').fadeIn('fast');
+        $('.hint2').fadeIn('fast');
     }, function() {
-        $('.last-name').fadeOut('fast');
+        $('.hint2').fadeOut('fast');
 
     });
 
     $('#hint-address').hover(function() {
-        $('.address').fadeIn('fast');
+        $('.hint3').fadeIn('fast');
     }, function() {
-        $('.address').fadeOut('fast');
+        $('.hint3').fadeOut('fast');
 
     });
+
+   
 
 });

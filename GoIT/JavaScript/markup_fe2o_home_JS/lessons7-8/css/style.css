@@ -191,7 +191,9 @@ input {
 .b-button:active {
     background: white;
 }
-.first-name, .last-name, .address {
+.hint1, .hint2, .hint3 {
+    font: 15px/1 'MyriadProRegular', normal, sans-serif;
+    color: #666;
     position: absolute;
     display: none;
     margin-left: 250px;
@@ -201,14 +203,15 @@ input {
     border-radius: 5px;
     box-shadow: 0 0 3px 1px #d8d8d8;
 }
-.first-name {
+.hint1 {
     margin-top: -124px;
 }
-.last-name {
+.hint2 {
     margin-top: -85px;
     
 }
-.address{
+.hint3{
     margin-top: -45px;
 }
+
 
