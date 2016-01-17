@@ -26,7 +26,30 @@ $(function () {
         $('.address').fadeIn(1000);
     });
 
-     
+    var $hint = $('.hint input');
+
+    $hint.hover(hoverIn, hoverOut);
+
+
+    // console.log(arr);
+
+    function hoverIn() {
+    var arr = ['.first-name', '.last-name', '.address'];
+        for (var i = 0; i < arr; i++) {
+            $(arr[i]).fadeIn('fast');
+        };
+        console.log(arr);
+    }
+
+    function hoverOut() {
+        var arr = ['.first-name', '.last-name', '.address'];
+        for (var i = 0; i < arr; i++) {
+            $(arr[i]).fadeOut('fast');
+        };
+    }
+
+
+
      // function hoverIn() {
      //    $(this).find("em").stop(true,true)
      //                      .animate({opacity: "show", top: "-75"}, "slow");
@@ -43,14 +66,14 @@ $(function () {
 
      // $hint.hover(hoverIn(), hoverOut());
 
-     var $em = $('.hint em');
-     console.log($em);
+    //  var $em = $('.hint em');
+    //  console.log($em);
 
-    $('.hint input').hover(function() {
-        $(this).next('.hint em').fadeIn('fast');
-        }, function() {
-        $(this).next('.hint em').fadeOut('fast');
-    });
+    // $('.hint input').hover(function() {
+    //     $('.hint em').fadeIn('fast');
+    //     }, function() {
+    //     $('.hint em').fadeOut('fast');
+    // });
 
 
 
