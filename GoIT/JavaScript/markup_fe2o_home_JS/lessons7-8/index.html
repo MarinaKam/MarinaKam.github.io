@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <!-- // <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-    <script src="js/script.js"></script>
+    <script src="js/tooltip.js"></script>
 </head>
 <body class="l-body">
     <div class="l-page">
@@ -33,33 +33,32 @@
                     </div>
                 </div>
             </section>
-            <section class="l-form">
-                <form>
-                  <fieldset>
+            <section class="l-form-wrap">
+                <form action="#">
                     <div>
                       <label for="firstname">Firstname</label>
-                      <input id="hint-first-name" name="firstname">
+                      <input id="hint-first-name"  type="text" class="fixedToolTip" name="firstname">
+                      <span class="tooltip">Please provide your first name</span>
                     </div>
                     <div>
                       <label for="lastname">Lastname</label>
-                      <input id="hint-last-name" name="lastname">
+                      <input id="hint-last-name" type="text" class="fixedToolTip" name="lastname">
+                      <span class="tooltip">Please provide also your lastname</span>
                     </div>
                     <div>
                       <label for="address">Address</label>
-                      <input id="hint-address" name="address">
+                      <input id="hint-address" type="text" class="fixedToolTip" name="address">
+                      <span class="tooltip">Your home or work address</span>
                     </div>
-                  </fieldset>
                 </form>
-                <div class="hint hint1"><em>Please provide your firstname.</em></div>
-                <div class="hint hint2"><em>Please provide also your lastname.</em></div>
-                <div class="hint hint3"><em>Your home or work address.</em></div>
-                <div class="b-button-link"><a class="b-button" href="#">Show help</a></div>
+                <button type="button" class="b-button" data-trigger="click">Show help</button>
             </section>
            
 
         </div>
 
     </div>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
