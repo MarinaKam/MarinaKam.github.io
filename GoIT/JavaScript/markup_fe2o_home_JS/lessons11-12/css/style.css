@@ -1,0 +1,110 @@
+#main {
+	width: 94%;
+	padding: 1% 3%;
+	
+}
+#main h1 { 
+	text-align: center;
+	font: 3em Helvetica; 
+	margin: 20px 0 10px 0;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #444444; 
+}
+/* Задаем сброс обтекания */
+.clear {
+	margin-top: -1px;
+	height: 1px;
+	clear:both;
+	zoom: 1;
+}		
+/* Slider */
+.slider {
+	/* Ширина контейнера */
+	width: 900px;
+	/* Внешние тступы сверху и снизу */
+	margin: 50px auto;
+	/* Внутренние отступы для ссылок navy */
+	padding: 0 30px;
+	/* Позиционирование */
+	position: relative;
+}
+/* Двойной клик по кнопкам вперед/назад вызывает выделение всех элементов слайдера,
+поэтому предотвращаем это */
+.slider::-moz-selection { 
+	background: transparent; 
+	color: #fff; 
+	text-shadow: none; 
+}
+
+.slider::selection { 
+	background: transparent; 
+	color: #fff; 
+	text-shadow: none; 
+}
+
+.slide-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	/* Скроем то что выходит за границы */
+	overflow: hidden;
+}
+.slide-wrap {
+	position: relative;
+	left: 0px;
+	top: 0;
+	/* максимально возможная ширина обертки слайдера */
+	width: 10000000px;
+}
+.slide-item {
+	/* Ширина слайда */
+	width: 280px;
+	/* Внутренние отступы */
+	padding: 10px;
+	/* Обтекание */
+	float: left;
+}
+.slide-title {
+	/* Шрифт */
+	font: bold 16px monospace;
+	/* Указываем, что элемент блочный */
+	display: block;
+}
+
+/* навигация вперед/назад */
+.navy {
+	/* абсолютное позиционирование */
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	height: 100%;
+	/* ширина элементов */
+	width: 30px;
+	cursor: pointer;
+}
+.prev-slide {
+	left: 0;
+	background:  url(bg/left-arrow.png) 11px 40% no-repeat;
+}
+.next-slide {
+	right: 0;
+	background:  url(bg/right-arrow.png) 13px 40% no-repeat;
+}
+.navy.disable {
+	/*background: #dbdbdb;*/
+}
+/* навигация старт/пауза */
+.auto {
+	width: 7px;
+	height: 11px;
+	cursor: pointer;
+	margin: 10px auto;
+}
+.play {
+	background: url(bg/play.png) center no-repeat;
+}
+.pause {
+	background: url(bg/pause.png) center no-repeat;
+}
+
+/*.auto {display:none}*/

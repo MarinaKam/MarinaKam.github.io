@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slajder</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/karusel-slajder-jquery.js"></script>
+	<script src="js/template.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<!-- <div id="main">
+	<h1>Простой слайдер с горизонтальной прокруткой</h1>
+	
+	<div class="slider">
+		<div class="slide-list">
+			<div class="slide-wrap">
+				<div class="slide-item">
+					<img width="280" height="187" src="http://loremflickr.com/280/187?random=1" alt="" />
+					<span class="slide-title">Описание 1</span>
+				</div>
+				<div class="slide-item">
+					<img width="280" height="187" src="http://loremflickr.com/280/187?random=2" alt="" />
+					<span class="slide-title">Описание 2</span>
+				</div>
+				<div class="slide-item">
+					<img width="280" height="187" src="http://loremflickr.com/280/187?random=3" alt="" />
+					<span class="slide-title">Описание 3</span>
+				</div>
+				<div class="slide-item">
+					<img width="280" height="187" src="http://loremflickr.com/280/187?random=4" alt="" />
+					<span class="slide-title">Описание 4</span>
+				</div>
+				<div class="slide-item">
+					<img width="280" height="187" src="http://loremflickr.com/280/187?random=5" alt="" />
+					<span class="slide-title">Описание 5</span>
+				</div>
+				
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="navy prev-slide"></div>
+		<div class="navy next-slide"></div>
+		<div class="auto play"></div>
+	</div>
+	
+	
+</div> -->
+<script type="text/template" id="templateHtml">
+	<div id="main">
+	<h1>Простой слайдер с горизонтальной прокруткой</h1>
+		<div class="slider">
+			<div class="slide-list">
+				<div class="slide-wrap">
+					<% for (var i=0; i < data.length; i++) { %>
+						<div class="slide-item">
+							<img width="280" height="187" src=<%= data[i].url %> alt=""/>
+							<span class="slide-title"><%= data[i].content %></span>
+						</div>
+					<% }; %>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="navy prev-slide"></div>
+			<div class="navy next-slide"></div>
+		</div>
+	</div>
+</script>
+	 
+</body>
+</html>
