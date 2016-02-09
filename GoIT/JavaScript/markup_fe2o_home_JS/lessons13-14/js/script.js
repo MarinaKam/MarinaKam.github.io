@@ -66,20 +66,15 @@ $(function() {
             
         });
         var result = []; //результат теста для пользователя
-        for(var i=0; i<local.length; i++){
+ 
+        for(var i=0; i < local.length; ++i){
 
-            if (choice[i]) {
-                var correctAnswer = questions[i].correctAnswer;
-                if (choice[i] === correctAnswer) { //сравниваем с правильным ответом
-                    result[i] = '<span style="color:#335673">Correct answer!</span>';
-                
-                } else {
-                    result[i] = '<span style="color:red">Incorrect answer!</span>';
-                };
-
+            if(choice[i] != questions[i].correctAnswer) {
+                result[i] = '<span style="color:red">Incorrect answer!</span>';
             } else {
-                result[i]='<span style="color:red">Incorrect answer!</span>';
+                result[i] = '<span style="color:#335673">Correct answer!</span>';
             };
+
         };
       
         var modal = $('<div class="modal"><h1>Result Test</h1></div>');
