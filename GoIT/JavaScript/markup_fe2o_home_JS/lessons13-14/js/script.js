@@ -55,7 +55,7 @@ $(function() {
     var submit = $('input[type="submit"]');
         submit.on('click', checkAnswer);
 
-    function checkAnswer() {
+    function checkAnswer(e) {
 
         var choice = [];
         var testBlock = $('.testBlock');
@@ -104,7 +104,7 @@ $(function() {
 
         exit.on('click', resetTest);
 
-        event.preventDefault();
+        e.preventDefault();
 
     };
 

@@ -1,0 +1,104 @@
+.title {
+	position: relative;
+	/*outline: 1px solid black;*/
+	margin: 20px auto;
+	padding-top: 30px;
+	/*height: 285px; */
+	width: 900px;
+}
+
+#search {
+	position: relative;
+	width: 750px;
+	/*outline: 1px solid black;*/
+	margin: auto;
+
+
+}
+
+#field {
+	float: left;
+	width: 600px;
+	height: 27px;
+	line-height: 27px;
+	text-indent: 10px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	color: #333;
+	background:  #fff;
+	border: solid 2px #d9d9d9;
+	border-top: solid 2px #c0c0c0;
+	border-right: none;
+	outline:  none;
+}
+
+#delete {
+	float: left;
+	width: 16px;
+	height: 29px;
+	line-height: 27px;
+	margin-right: 15px;
+	padding: 0 10px 0 10px;
+	font-family: "Lucida Sans", "Lucida Sans Unicode",sans-serif;
+	font-size: 22px;
+	background:  #fff;
+	border: solid 2px #d9d9d9;
+	border-top: solid 2px #c0c0c0;
+	border-left: none;
+}
+
+#delete #x {
+	color: #a1b9ed;
+	cursor: pointer;
+	display: none;
+}
+
+#delete #x:hover {
+	color: #36c;
+}
+
+#submit {
+	cursor: pointer;
+	width: 70px;
+	height:  32px;
+	line-height: 0;
+	font-size: 0;
+	text-indent: -999px;
+	color: transparent;
+	background: url("img/search.png") no-repeat #4d90fe center;
+	border: 1px solid #3079ED;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+#submit:hover {
+	background: url("img/search.png") no-repeat center #357AE8;
+	border: 1px solid #2F5BB7;
+}
+
+#results, #searchResults {
+	position: relative;
+	margin: 10px auto;
+	font: 15px 'Roboto', sans-serif;
+}
+#results {
+	margin: 20px auto;
+}
+
+#results ul li {
+	margin: 15px 0;
+}
+
+#results li a {
+	font-size: 17px;
+}
+
+.totalSearch {
+	font-size: 14px;
+    opacity: 0.5;
+	
+}
+#searchResults span {
+	/*margin: 20px auto;*/
+	font-weight: bold;
+}
