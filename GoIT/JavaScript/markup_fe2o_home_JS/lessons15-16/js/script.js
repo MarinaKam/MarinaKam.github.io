@@ -13,7 +13,7 @@ $(function() {
 	var $ajaxSearch = function () {
 
 		var $text = $('#field').val();
-		var url = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q=' + $text + '&callback=GoogleCallback&context=?';
+		var url = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q=' + encodeURIComponent($text) + '&callback=GoogleCallback&context=?';
 
 		$.ajax({
 			url      : url,
@@ -31,7 +31,7 @@ $(function() {
 	    		
 				$.each(data.results, function(i, val){
 					var li = document.createElement("li");
-			        li.innerHTML = '<a href="'+val.url+'" title="' + val.url + '" target="_blank">'+val.title+"</a> - " + "<p>" + val.content +  "</p>";
+			        li.innerHTML = '<a href="'+val.url+'" title="' + val.url + '" target="_blank">' + val.title + '<br/>' + val.visibleUrl + "</a> - " + "<p>" + val.content +  "</p>";
 			        ul.appendChild(li);
 		    	$('#results').html(ul);
 
