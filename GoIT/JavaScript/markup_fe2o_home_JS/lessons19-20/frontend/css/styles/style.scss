@@ -1,0 +1,58 @@
+@import 'variables';
+.header,
+.header__wrap__menu,
+.content_galery {
+    @extend .message;
+}
+.content_galery {
+    padding: 40px 0 25px;
+}
+
+.slideshow {
+    width: 1160px;
+    height: 450px;
+    @extend .message;
+    @include box-shadow(0 0 2px #111);
+}
+
+.slideshow:after {
+    content: "";
+    width: 1171px;
+    height: 470px;
+    position: absolute;
+    opacity: .4;
+    display: block;
+    top: -5px;
+    left: -2px;
+    background-color: rgba(0, 0, 0, 1);
+    background: url("img/photos/canv1.png");
+}
+
+.slideshow_list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.first {
+    display: block;
+}
+
+.galery__name {
+    margin-left: 30px;
+    margin-top: -210px;
+    position: absolute;
+    font: $size + 38 $font-UbuntuM;
+}
+
+.name__span {
+    padding: 1px 2px;
+    color: rgb(244, 182, 13);
+    background: $backgroundText;
+}
+
+.name__text {
+    color: rgba(255, 255, 255, .8);
+    background: $backgroundText;
+}

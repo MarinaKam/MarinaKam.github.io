@@ -1,0 +1,71 @@
+// @import '../fonts';
+$colobBorderMenu: rgb(24, 26, 29);
+$background: rgb(42, 45, 50);
+$backgroundText: rgba(42, 45, 50, .8);
+$font-UbuntuM: 'UbuntuMedium',
+sans-serif;
+$font-UbuntuL: 'UbuntuLight',
+sans-serif;
+$font-UbuntuCR: 'UbuntuCondensedRegular',
+sans-serif;
+$size: 12px;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// .box {
+//     @include border-radius(10px);
+// }
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+.message {
+    margin: 0 auto;
+    width: 1160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.message1 {
+    margin: 0;
+    padding: 0;
+}
+
+.messageDisplay2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.messageDisplay {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.messageCursor {
+    cursor: pointer;
+}
+
+.messageCross {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0) scale(1.1);
+    transform: translate3d(0, 20px, 0) scale(1.1);
+}
+
+.messageBefore {
+    left: 0;
+    top: 0;
+    background-color: rgba(244, 182, 13, 1);
+    border-right: 2px solid rgba(255, 255, 255, .5);
+    color: white;
+}
+
+.messageBackgroundTransp {
+    background-color: transparent;
+}

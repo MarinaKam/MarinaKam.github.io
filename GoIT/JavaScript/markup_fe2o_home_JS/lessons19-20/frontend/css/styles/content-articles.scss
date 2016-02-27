@@ -1,0 +1,61 @@
+@import 'variables';
+.content__articles__wrap {
+    @extend .message;
+}
+
+.content_articles {
+    padding: 20px 0 40px;
+    // width: 100%;
+}
+
+.articles__text {
+    // @extend .message;
+    @extend .messageDisplay;
+    width: 33%;
+    // height: 800px;
+}
+
+.articles__number {
+    // @extend .message;
+    @extend .messageDisplay;
+    text-align: center;
+    font: $size + 80 $font-UbuntuM;
+    color: rgba(42, 43, 46, .2);
+    letter-spacing: -5px;
+    width: 30%;
+}
+
+.text__info {
+    // @extend .message;
+    @extend .messageDisplay;
+    width: 68%;
+}
+
+.articles__img {
+    padding: 25px 10px 15px;
+}
+
+.articles__title {
+    padding: 0px 10px 25px;
+    font: $size + 8 $font-UbuntuM, bold;
+}
+
+.articles__conten {
+    padding: 0px 2px 15px;
+    font: $size + 1 'Arial', sans-serif;
+}
+
+.articles__read {
+    padding: 5px;
+    color: rgb(42, 43, 46);
+    font: $size + 1 $font-UbuntuM;
+}
+
+.articles__read:hover {
+    color: rgb(36, 140, 236);
+}
+
+.articles__read.active {
+    background-color: transparent;
+    color: rgb(36, 140, 236);
+}

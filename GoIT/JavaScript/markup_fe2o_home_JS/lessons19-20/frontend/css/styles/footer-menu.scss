@@ -1,0 +1,75 @@
+@import 'variables';
+.footer__background,
+.footer__coontacts__background {
+    width: 100%;
+    min-width: 1160px;
+    height: 350px;
+    position: absolute;
+    background-color: rgb(42, 45, 50);
+}
+
+.footer__coontacts__background {
+    background-color: rgba(53, 56, 60, 1);
+    height: 50px;
+}
+
+.footer__menu {
+    @extend .message;
+}
+
+.footer__wrap__menu {
+    @extend .message;
+}
+
+.footer__wrap__menu__list {
+    @extend .messageDisplay;
+    @extend .messageDisplay2;
+    width: 20%;
+    padding: 35px 26px 45px;
+}
+
+.footer__menu__title {
+    font: $size+4 $font-UbuntuM;
+    color: white;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.footer__list__item {
+    font: $size+1 'Arial', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: .8em 0;
+}
+
+.footer__list__link {
+    color: rgba(255, 255, 255, .3);
+}
+
+.footer__list__link:hover,
+.footer__list__link.active {
+    color: rgb(36, 140, 236);
+    @extend .messageBackgroundTransp;
+}
+
+.last {
+    border-bottom: 1px solid transparent;
+}
+
+.footer__contacts {
+    @extend .message;
+    font: $size 'Arial', sans-serif;
+    color: rgba(255, 255, 255, .2);
+    padding: 1.5em;
+}
+
+.footer__contacts__item {
+    padding-left: 3.5em;
+    img {
+        margin: 0 10px -2px 0px;
+    }
+}
+
+.title {
+    float: right;
+    padding-right: 40px;
+}

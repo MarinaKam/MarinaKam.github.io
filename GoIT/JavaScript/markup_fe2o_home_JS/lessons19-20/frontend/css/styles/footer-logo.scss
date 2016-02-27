@@ -1,0 +1,11 @@
+@import 'variables';
+.footer_logo {
+    @extend .message;
+    padding: 75px;
+}
+
+.footer__logo__img {
+    @extend .messageDisplay;
+    padding: 0 50px;
+    margin-left: -80px;
+}
