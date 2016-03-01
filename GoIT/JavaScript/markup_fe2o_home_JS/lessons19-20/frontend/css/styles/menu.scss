@@ -51,14 +51,15 @@ body {
 }
 
 .header__menu {
-    background-color: $colobBorderMenu;
     @extend .messageDisplay;
-    width: 463px;
+    width: 600px;
 }
 
 .menu__item {
     display: inline-block;
+    float: left;
     font: ($size + 2) $font-UbuntuCR;
+    border-right: 1px solid $colobBorderMenu;
 }
 
 .link__for__menu {
@@ -74,10 +75,10 @@ body {
 }
 
 .menu__link {
+    display: block;
     color: rgba(255, 255, 255, 0.7);
     background-color: $background;
-    padding: 19px 25px;
-    line-height: 4em;
+    padding: 20px 26px;
     @extend .messageCursor;
 }
 
@@ -87,6 +88,7 @@ body {
 
 .active {
     background-color: rgb(36, 140, 236);
+    // padding: 19px 30px;
 }
 
 .header__search {
