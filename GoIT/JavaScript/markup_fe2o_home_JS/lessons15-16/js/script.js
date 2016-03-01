@@ -1,6 +1,6 @@
 function GoogleCallback(func, data){
   
-    console.log('data', data);
+    // console.log('data', data);
     window[func](data);
 }
 
@@ -8,12 +8,12 @@ $(function() {
 
 	var $searchForm = $('#searchForm');
 	var $text = $('#field').val();
-	$("#results").empty();
+	// $("#results").empty();
 
 	var $ajaxSearch = function () {
 
 		var $text = $('#field').val();
-		var url = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q=' + encodeURIComponent($text) + '&callback=GoogleCallback&context=?';
+		var url = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q=' + $text + '&callback=GoogleCallback&context=?';
 
 		$.ajax({
 			url      : url,
@@ -23,7 +23,7 @@ $(function() {
 	    		var ul = document.createElement("ul");
 	    		$("#searchResults").empty();
 	    		if ($text) {
-	    			$("#searchResults").append("<p class='totalSearch'>Results for <b>" + '<span>' + encodeURIComponent($text) + '</span>' + "</b></p>");
+	    			$("#searchResults").append("<p class='totalSearch'>Results for <b>" + '<span>' + $text + '</span>' + "</b></p>");
 	    			
 	    		} else {
 	    			$("#searchResults").append("<p class='totalSearch'>No matching pages</p>");
