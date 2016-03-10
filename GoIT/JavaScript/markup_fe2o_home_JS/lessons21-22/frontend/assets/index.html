@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lessons 22</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+    <!-- // <script type="text/javascript" src="js/tmpl.js"></script> -->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head">
+            <h1>Test Programming</h1>
+        </div>
+        <div class="body">
+            <img src="css/img/body2.jpg" height="170" width="441" alt="">
+            <form method="post" action="">
+                <script type="text/template" id="test">
+                    <% for (var i=0; i < local.length; i++) { %>
+                        <div class="testBlock">
+                            <div><span><%=local[i].id%>. </span><span class="questionTitle"><%=local[i].text%></span></div>
+                            <div>
+                                <input type="checkbox" name="choices" id="<%=i%>.0" value="0" class="check">
+                                <label for="<%=i%>.0" class="answer">
+                                    <%=local[i].answers[0]%>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="choices" id="<%=i%>.1" value="1" class="check">
+                                <label for="<%=i%>.1" class="answer">
+                                    <%=local[i].answers[1]%>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="choices" id="<%=i%>.2" value="2" class="check">
+                                <label for="<%=i%>.2" class="answer">
+                                    <%=local[i].answers[2]%>
+                                </label>
+                            </div>
+                        </div>
+                        <% };%>
+                </script>
+                <div></div>
+                <input type="submit" class="b-button" value="CHECK">
+            </form>
+        </div>
+    </div>
+    <!-- // <script type="text/javascript" src="js/main.js"></script> -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
