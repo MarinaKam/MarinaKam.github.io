@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MVC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script type="text/template" id="wrapper_template">
+    <div class="wrapper">
+        <ul class="item"></ul>
+        <div class="controlls">
+            <input type="text" class="item__value">
+            <button class="item__add">Add</button>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="list_template">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <li class="item__list"><%= data[i] %><img src="img/cancel.png" data-value="<%= data[i] %>"  alt="Cancel" class="item__delete"></li>
+    <% } %>
+</script>
+
+<script data-main="js/main" src='js/require.js'></script>
+</body>
+</html>
