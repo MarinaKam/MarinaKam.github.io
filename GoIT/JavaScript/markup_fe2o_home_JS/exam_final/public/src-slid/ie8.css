@@ -54,7 +54,7 @@
 }
 
 .owl-next {
-    left: 70%;
+    left: 40%;
 }
 
 .partners {
@@ -72,7 +72,7 @@
 .humans_item {
     position: relative !important;
     margin: 0 auto;
-    width: 47%;
+    width: 48%;
     display: inline-block;
     vertical-align: top;
 }
@@ -83,10 +83,6 @@
 
 .content_gallery {
     top: 160px;
-}
-
-.search {
-    top: 350px;
 }
 
 .footer_block {
