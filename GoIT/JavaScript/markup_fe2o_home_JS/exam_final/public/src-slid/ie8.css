@@ -43,10 +43,17 @@
 
 .img_carousel {
     width: 240px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_article {
+    width: 90%;
 }
 
 .step1 {
     background-image: url("img/step1.jpg");
+    width: 240px;
 }
 
 .step2 {
@@ -58,11 +65,20 @@
 }
 
 .partners {
+    height: 500px;
     top: 250px;
+    margin: 0 auto;
     display: inline;
+    position: relative;
+    overflow: hidden;
+    clear: both;
     width: 100%;
 }
 
 .figure {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    clear: both;
     outline: 1px solid blue;
 }
