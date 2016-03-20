@@ -73,7 +73,7 @@
 .humans_item {
     position: relative !important;
     margin: 0 auto;
-    width: 33%;
+    width: 45%;
     display: inline-block;
     vertical-align: top;
 }
@@ -87,10 +87,9 @@
 }
 
 .search {
-    top: 250px;
+    top: 550px;
 }
 
-.form_edit, .form_input {
-    display: inline-block;
-    vertical-align: top;
+.footer_block {
+    top: 300px;
 }
