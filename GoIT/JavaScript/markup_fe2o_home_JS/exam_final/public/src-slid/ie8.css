@@ -42,7 +42,7 @@
 }
 
 .img_carousel {
-    width: 240px !important;
+    width: 300px !important;
     height: 400px;
     position: relative;
 
@@ -50,6 +50,7 @@
 
 .img_article {
     width: 90%;
+    top: 50%;
 }
 
 .partners {
@@ -65,27 +66,30 @@
 
 }
 .partners_men, .partners_women {
-    position: relative !important;
-    margin: 0 auto;
-    overflow: hidden;
-    width: 24%;
-    display: inline-block;
-    vertical-align: top;
+    top: 50px;
+
 }
 
 .humans_item {
     position: relative !important;
     margin: 0 auto;
+    width: 25% !important;
     display: inline-block;
     vertical-align: top;
 }
 
-/*.figure {*/
-    /*display: inline;*/
-    /*width: 260px;*/
-    /*height: 280px;*/
-    /*position: relative !important;*/
-    /*overflow: hidden;*/
-    /*clear: both;*/
-    /*outline: 1px solid blue;*/
-/*}*/
+.partners_form {
+    top: 250px;
+}
+
+.content_gallery {
+    top: 300px;
+}
+
+.search {
+    top: 50px;
+}
+
+.form_edit, .form_input {
+    display: inline;
+}
