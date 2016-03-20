@@ -9,8 +9,18 @@
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-    <!--[if lte IE 8]>
+    <!--[if lt IE 9]>
     <script src="src/respond.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('figure');
+        document.createElement('figcaption');
+    </script>
     <![endif]-->
 
     <!--[if gt IE 9]>-->
@@ -30,10 +40,6 @@
     <script src="src/script.js"></script>
     <!--<![endif]-->
 
-    <script>
-        document.createElement('figure');
-        document.createElement('figcaption');
-    </script>
 
 </head>
 
