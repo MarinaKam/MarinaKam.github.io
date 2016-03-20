@@ -1,0 +1,254 @@
+/* content_Carousel
+   ========================================================================== */
+
+@import 'variables';
+
+@media (min-width: $small) {
+  .content_wrap {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    margin: 0 auto;
+
+  }
+  .content_title {
+    text-align: center;
+    font: $size + 2 $font-MontserratBold;
+    margin: 35px 0 0 0;
+  }
+  .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 300px;
+    height: 100%;
+  }
+  .owl-carousel {
+    //outline: 1px solid red;
+    margin: 0 0 10px 0;
+    width: 300px;
+    height: 240px;
+  }
+  .img_carousel {
+    width: 300px;
+    height: 240px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+  .img_carousel::after {
+    content: '';
+    position: absolute;
+    width: 296px;
+    height: 238px;
+    top: 0;
+    left: 2px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .img_article {
+    position: absolute;
+    width: 90%;
+    top: 73px;
+    left: 21px;
+    color: white;
+    z-index: 2;
+  }
+
+  .step1 {
+    background:  url("img/slider_mobile_1.png") no-repeat 0 2px/cover;
+    width: 297px;
+    height: 240px;
+
+  }
+
+  .step1::after {
+    left: 1px;
+    top: 2px;
+  }
+
+  .step2 {
+    background-image:  url("img/slider_mobile_2.png");
+    & .img_article {
+      margin: 29px 0 0 -1px;
+    }
+
+  }
+
+  .step3 {
+    background-image:  url("img/slider_mobile_3.png");
+    margin: 0 0 0 -2px;
+
+  }
+
+
+  .button_step {
+    font:$size - 10 $font-MontserratRegular;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.8px;
+    width: 70px;
+    height: 20px;
+    background-color: rgb(255, 78, 80);
+    border-radius: 10px;
+    padding: 4px 0 3px 15px;
+  }
+
+  .img_title {
+    font: $size + 4 $font-MontserratBold;
+    margin: 14px 0 0 -2px;
+  }
+
+  .img_text {
+    font: $size - 6 $font-RobotoLight;
+    color: rgb(204, 204, 204);
+    margin: 10px 0 0 -2px;
+    line-height: 1.28;
+  }
+  .owl-prev, .owl-next{
+    color: rgba(255,255,255,0);
+    width: 45px;
+    height: 55px;
+    z-index: 1;
+    top: 80px;
+    position: absolute;
+
+  }
+  .owl-prev {
+    background:  url("img/arrow.png") no-repeat;
+    left: 3%;
+  }
+  .owl-next {
+    background:  url("img/arrow2.png") no-repeat;
+    left: 87%;
+  }
+
+}
+
+@media (min-width: $middle) {
+
+  .content_title {
+    margin: 94px 0 0 6px;
+  }
+
+  .carousel-wrapper {
+    margin: 33px auto;
+    width: 768px;
+    height: 100%;
+  }
+
+  .owl-carousel {
+    position: relative;
+    float: left;
+    margin: 0 10px;
+    width: 236px;
+    height: 400px;
+  }
+
+  .img_carousel {
+    width: 236px;
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
+  .img_article{
+    margin: 139px 0 0 0;
+  }
+
+  .img_carousel:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .owl-prev {
+    background:  url("img/arrow.png") no-repeat;
+    top: 38px;
+    left: 9%;
+  }
+
+  .owl-next {
+    background:  url("img/arrow2.png") no-repeat;
+    top: 38px;
+    left: 78%;
+  }
+
+  .step1 {
+    background: rgba(0, 0, 0, 0) url("img/slider_big_1_ie.jpg") no-repeat scroll -40px 0;
+  }
+
+  .step2 {
+    background:  rgba(0, 0, 0, 0) url("img/slider_big_2_ie.jpg") no-repeat scroll -28px 0;
+    & .img_article{
+      margin-top: 186px;
+    }
+  }
+
+  .step3 {
+    background:  rgba(0, 0, 0, 0) url("img/slider_big_3_ie.jpg") no-repeat scroll -28px 0;
+    margin: 0 -4px 0 0;
+  }
+
+  .img_carousel::after {
+    width: 234px;
+    background-image: none;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .content_title {
+    margin: 94px 0 0 -3px;
+
+  }
+  .carousel-wrapper {
+    width: 1024px;
+    padding: 0 30px;
+  }
+
+  .owl-carousel {
+    width: 300px;
+    height: 400px;
+  }
+
+  .img_carousel {
+    width: 300px;
+    height: 400px;
+  }
+
+  .img_article{
+    margin: 155px 0 0 2px;
+  }
+
+  .step1 {
+    background: rgba(0, 0, 0, 0) url("img/step1.jpg") no-repeat scroll 0 0/cover;
+  }
+
+  .step2 {
+    background: rgba(0, 0, 0, 0) url("img/step2.jpg") no-repeat scroll 0 0/cover;
+    & .img_article {
+      margin: 185px 0 0 1px;
+    }
+  }
+
+  .step3 {
+    background:  rgba(0, 0, 0, 0) url("img/step3.jpg") no-repeat scroll 0 0/cover;
+  }
+
+  .owl-prev, .owl-next {
+    top: 151px;
+  }
+
+  .owl-next {
+    left: 84%;
+  }
+
+  .owl-prev {
+    left: 8%;
+  }
+
+
+}
