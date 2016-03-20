@@ -3,7 +3,6 @@
 
 .wrapper {
     width: 100%;
-    height: 3000px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -57,7 +56,7 @@
 .partners {
     width: 100%;
     height: 500px;
-    top: 220px;
+    top: 190px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -69,24 +68,23 @@
 .humans_item {
     position: relative !important;
     margin: 0 auto;
-    width: 48%;
+    width: 50%;
     display: inline-block;
     vertical-align: top;
 }
 
 .partners_form {
-    top: 200px;
+    top: 100px;
 }
 
 .content_gallery {
-    top: 360px;
+    top: 160px;
 }
 
-/*.search {*/
-    /*top: 550px;*/
-/*}*/
+.search {
+    top: 350px;
+}
 
-/*.footer_block {*/
-    /*top: 1000px;*/
-    /*margin-bottom: 50px;*/
-/*}*/
+.footer_block {
+    margin-bottom: 50px;
+}
