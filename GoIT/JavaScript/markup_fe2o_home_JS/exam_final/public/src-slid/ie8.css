@@ -1,5 +1,10 @@
 /*header*/
 /*noinspection CssInvalidFunction*/
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
 .header{
     width: 100%;
     height: 700px;
@@ -7,10 +12,9 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    background: url('style/img/lading-img.jpg') no-repeat;
+    background: #c09c8f;
+    background: url(style/img/lading-img.jpg) no-repeat;
     background-position: center;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/img/lading-img.jpg', sizingMethod="scale");
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/img/lading-img.jpg', sizingMethod='scale')";
 }
 .header_wrap{
     width: 960px;
@@ -18,34 +22,4 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-}
-.header_checkin{
-    display: inline;
-    float: right;
-    width: 250px;
-    height: 100px;
-    margin-top: 40px;
-}
-
-.log, .sign {
-    color: black;
-}
-
-.header_topic{
-    width: 600px;
-    margin: 0 auto;
-    clear: both;
-    padding: 80px 90px 0 0;
-}
-.header_title{
-    text-align: center;
-    font-size: 52px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.header_subtitle{
-    font-size: 24px;
-    font-weight: 300;
-    margin: 30px 0 40px 0px;
-    text-align: center;
 }
