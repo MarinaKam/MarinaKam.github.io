@@ -38,20 +38,31 @@
 }
 
 .content_wrap {
-    top: 150px;
+    top: 250px;
+}
+
+.img_carousel {
+    width: 240px;
 }
 
 .step1 {
     background-image: url("img/step1.jpg");
-    width: 300px !important;
 }
 
 .step2 {
     background-image: url("img/step2.jpg");
-    width: 300px !important;
 }
 
 .step3 {
     background-image: url("img/step3.jpg");
-    width: 300px !important;
+}
+
+.partners {
+    top: 250px;
+    display: inline;
+    width: 100%;
+}
+
+.figure {
+    outline: 1px solid blue;
 }
