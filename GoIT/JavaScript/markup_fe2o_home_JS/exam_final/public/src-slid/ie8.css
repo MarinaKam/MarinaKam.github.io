@@ -42,7 +42,7 @@
 }
 
 .img_carousel {
-    width: 300px;
+    width: 240px;
     height: 400px;
     position: relative;
 
@@ -50,19 +50,6 @@
 
 .img_article {
     width: 90%;
-}
-
-.step1 {
-    background: url("img/step1.jpg") no-repeat;
-    width: 240px;
-}
-
-.step2 {
-    background: url("img/step2.jpg") no-repeat;
-}
-
-.step3 {
-    background: url("img/step3.jpg") no-repeat;
 }
 
 .partners {
@@ -75,6 +62,10 @@
     overflow: hidden;
     clear: both;
     outline: 1px solid blue;
+}
+.humans_info {
+    width: 150px;
+    outline: 1px solid red;
 }
 
 .figure {
