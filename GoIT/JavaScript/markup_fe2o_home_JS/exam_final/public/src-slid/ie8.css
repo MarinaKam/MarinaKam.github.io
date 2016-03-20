@@ -7,14 +7,9 @@
 }
 .header{
     width: 100%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    background: #c09c8f;
-    background: url(style/img/lading-img.jpg) no-repeat;
-    background-position: center;
-    -ms-behavior: url(src-slide/PIE.htc);
+    height: 700px;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/img/lading-img.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(style/img/lading-img.jpg', sizingMethod='scale')";
 }
 .header_wrap{
     width: 960px;
@@ -23,4 +18,11 @@
     position: relative;
     overflow: hidden;
     outline: 1px solid red;
+}
+
+.header_topic {
+    width: 520px;
+    margin: 0 auto;
+    position: relative;
+    outline: 1px solid blue;
 }
