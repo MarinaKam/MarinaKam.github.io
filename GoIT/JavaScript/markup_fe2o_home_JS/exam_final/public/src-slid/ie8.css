@@ -7,6 +7,8 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    background: url('style/img/lading-img.jpg') no-repeat;
+    background-position: center;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/img/lading-img.jpg', sizingMethod="scale");
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/img/lading-img.jpg', sizingMethod='scale')";
 }
@@ -15,13 +17,18 @@
     height: 700px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 .header_checkin{
-    float: right;
     display: inline;
+    float: right;
     width: 250px;
     height: 100px;
     margin-top: 40px;
+}
+
+.log, .sign {
+    color: black;
 }
 
 .header_topic{
