@@ -9,21 +9,28 @@
 .header {
     width: 100%;
     height: 700px;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/img/lading-img.jpg', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='style/img/lading-img.jpg', sizingMethod= scale);
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(style/img/lading-img.jpg', sizingMethod='scale')";
 }
 .header_wrap {
     width: 960px;
-    height: 700px;
+    /*height: 700px;*/
     margin: 0 auto;
     position: relative;
     text-align: center;
     outline: 1px solid red;
 }
 
+.header_top {
+    width: 100%;
+    outline: 1px solid black;
+    color: black;
+}
+
 .header_topic {
     width: 520px;
-    margin: auto;
     position: relative;
+    left: 50%;
+    margin-left: -100px;
     outline: 1px solid blue;
 }
