@@ -1,0 +1,136 @@
+/* footer
+   ========================================================================== */
+
+@import 'variables';
+
+@media (min-width: $small) {
+  .footer_block {
+    position: relative;
+    overflow: hidden;
+    margin: 54px auto;
+    text-align: center;
+    width: 100%;
+    color: rgb(51, 51, 51);
+    border-top: 4px solid rgb(255, 78, 80);
+  }
+
+  .footer_title {
+    text-transform: uppercase;
+    color: rgb(255, 78, 80);
+    font: $size - 4 $font-MontserratBold;
+    letter-spacing: .7px;
+    margin: 16px 0 0 0;
+  }
+
+  .footer_content {
+    position: relative;
+    overflow: hidden;
+    margin: 11px auto;
+    padding-bottom: 2px;
+  }
+  .footer_content_title {
+    font: $size - 6 $font-MontserratBold;
+  }
+
+  .footer_list {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 17px;
+  }
+
+  .footer_link {
+    display: block;
+    float: left;
+    margin-left: 13px;
+    color: rgb(102, 102, 102);
+    font: $size - 6 $font-RobotoLight;
+  }
+
+  .footer_logo {
+    position: relative;
+    overflow: hidden;
+    margin: 13px auto;
+  }
+
+  .footer_design {
+    color: rgb(204, 204, 204);
+    text-transform: uppercase;
+    font: $size - 10 $font-MontserratBold;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: $middle) {
+  .footer_block {
+    margin: 104px auto;
+    width: 100%;
+  }
+  .footer_wrap {
+    width: 90%;
+    margin: 11px auto;
+  }
+
+  .footer_title {
+    float: left;
+    clear: both;
+    margin-top: 25px;
+  }
+
+  .footer_content {
+    float: left;
+    margin-left: 12.5%;
+    top: 15px;
+    width: 140px;
+  }
+
+  .footer_list,
+  .footer_link,
+  .footer_content_title {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  .footer_content_title {
+    padding-bottom: 6px;
+  }
+
+  .footer_link {
+    clear: both;
+    line-height: 1.8;
+  }
+
+  .second {
+    margin: 3.7% 0 0 4.4%;
+  }
+
+  .footer_logo {
+    float: right;
+    margin: 4% 0 0 0;
+  }
+
+  .footer_design {
+    margin: 0 -28px 4px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer_wrap {
+    width: 65.5%;
+  }
+
+  .footer_content {
+    margin-left: 10.5%;
+  }
+
+  .second {
+    margin: 2.8% 0 0 2.2%;
+  }
+
+  .footer_logo {
+    margin: 3% 0 0 0;
+  }
+}
