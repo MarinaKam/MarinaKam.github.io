@@ -16,7 +16,7 @@
     font: $size + 2 $font-MontserratBold;
     margin: 35px 0 0 0;
   }
-  .content__carousel-wrapperr {
+  .content__carousel-wrapper {
     position: relative;
     overflow: hidden;
     margin: 10px auto;
@@ -58,7 +58,7 @@
   }
 
   .step1 {
-    background:  url("../img/slider_mobile_1.png") no-repeat 0 2px/cover;
+    background:  url("../img/slider_mobile_1.png") no-repeat 0 2px;
     width: 297px;
     height: 240px;
 
