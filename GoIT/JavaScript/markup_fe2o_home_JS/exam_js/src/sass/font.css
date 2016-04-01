@@ -1,17 +1,42 @@
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url("../fonts/Montserrat-Bold.ttf");
+    src: url("../fonts/Montserrat-Bold.eot");
+    src: url("../fonts/Montserrat-Bold.eot?#iefix")format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url("../fonts/Montserrat-Regular.ttf");
+    src: url("../fonts/Montserrat-Regular.eot");
+    src: url("../fonts/Montserrat-Regular.eot?#iefix")format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "Roboto-Black";
-    src: url("../fonts/Roboto-Black.ttf");
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.eot");
+    src: url("../fonts/Roboto-Light.eot?#iefix")format("embedded-opentype"), url("../fonts/Roboto-Lightr.woff") format("woff"), url("../fonts/Roboto-Lightr.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
+
+
+/*@font-face {*/
+    /*font-family: "Montserrat-Bold";*/
+    /*src: url("../fonts/Montserrat-Bold.ttf");*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: "Montserrat-Regular";*/
+    /*src: url("../fonts/Montserrat-Regular.ttf");*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: "Roboto-Black";*/
+    /*src: url("../fonts/Roboto-Black.ttf");*/
+/*}*/
 
 @font-face {
     font-family: "Roboto-BlackItalic";

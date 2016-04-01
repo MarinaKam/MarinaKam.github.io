@@ -41,7 +41,9 @@
     height: 36px;
     padding: 8px 0 0 0;
     border: 2px solid white;
-    border-radius: 18px;
+    //border-radius: 18px;
+    @include border-radius(18px);
+    behavior: url(PIE.htc);
     margin: 0 0 0 4px;
   }
   .checkin__link {
@@ -78,7 +80,9 @@
     width: 280px;
     padding: 11.2px 2px 0 0;
     background-color: rgb(255, 78, 80);
-    border-radius: 20px;
+    @include border-radius(20px);
+    behavior: url(PIE.htc);
+    //border-radius: 20px;
     font: $size - 6 $font-MontserratBold;
     color: white;
 

@@ -3,6 +3,14 @@ $middle: 727px;
 $large: 1440px;
 $nav_width: 30px;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
 
 $font-MontserratBold: 'Montserrat-Bold', sans-serif;
 $font-MontserratRegular: 'Montserrat-Regular', sans-serif;

@@ -65,11 +65,11 @@ gulp.task('src', function() {
 gulp.task('js', function() {
     return combine(
         gulp.src('src/js/**/*.js'),
-        //jshint(),
-        //jshint.reporter('default'),
+        jshint(),
+        jshint.reporter('default'),
         rigger(),
         gulpIf(isDevelopment, sourcemaps.init()),
-        //uglify(),
+        uglify(),
         gulpIf(isDevelopment, sourcemaps.write()),
         gulp.dest('build/js')
     ).on('error', notify.onError());
