@@ -1,5 +1,5 @@
-//= ../lib/jquery-1.9.1.min.js
-//= ../lib/owl.carousel.min.js
+
+
 //= ../lib/imagesloaded.pkgd.min.js
 //= ../lib/masonry.pkgd.min.js
 //= ../lib/tmpl.js
