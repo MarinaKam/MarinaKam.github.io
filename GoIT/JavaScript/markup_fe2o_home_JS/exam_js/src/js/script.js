@@ -1,7 +1,6 @@
 
 
 //= ../lib/owl.carousel.min.js
-//= ../lib/masonry.pkgd.min.js
 //= ../lib/tmpl.js
 
 function getWord(min, max){

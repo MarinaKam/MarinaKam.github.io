@@ -76,7 +76,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('js:lib', function() {
-    return gulp.src('src/lib/imagesloaded.pkgd.min.js')
+    return gulp.src('src/lib/{imagesloaded.pkgd.min.js,masonry.pkgd.min.js}')
         .pipe(gulp.dest('build/lib'));
 });
 
