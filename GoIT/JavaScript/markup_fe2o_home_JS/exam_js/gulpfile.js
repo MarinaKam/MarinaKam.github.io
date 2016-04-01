@@ -75,6 +75,7 @@ gulp.task('js', function() {
     ).on('error', notify.onError());
 });
 
+
 gulp.task('fonts', function() {
     return gulp.src('src/fonts/*')
         .pipe(gulp.dest('build/fonts'));
