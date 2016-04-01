@@ -59,14 +59,6 @@ $(function () {
 
                 $('.content_gallery').append(piclist);
 
-                //$('.grid').imagesLoaded( function() {
-                //    $('.grid').masonry({
-                //        itemSelector: '.grid_item',
-                //        columnWidth: '.grid_item',
-                //        gutter: 20
-                //    });
-                //});
-
                 $('.grid').isotope({
                     itemSelector: '.grid_item',
                     layoutMode: 'masonry',

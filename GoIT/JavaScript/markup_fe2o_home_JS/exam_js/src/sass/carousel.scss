@@ -4,19 +4,19 @@
 @import 'variables';
 
 @media (min-width: $small) {
-  .content_wrap {
+  .content {
     position: relative;
     overflow: hidden;
     width: auto;
     margin: 0 auto;
 
   }
-  .content_title {
+  .content__title {
     text-align: center;
     font: $size + 2 $font-MontserratBold;
     margin: 35px 0 0 0;
   }
-  .carousel-wrapper {
+  .content__carousel-wrapperr {
     position: relative;
     overflow: hidden;
     margin: 10px auto;
@@ -28,16 +28,15 @@
     width: 300px;
     height: 240px;
   }
-  .img_carousel {
+  .owl-carousel__image {
     width: 300px;
     height: 240px;
     border: 1px solid transparent;
     //border-radius: 4px;
     @include border-radius(4px);
-    behavior: url(PIE.htc);
   }
 
-  .img_carousel::after {
+  .owl-carousel__image::after {
     content: '';
     position: absolute;
     width: 296px;
@@ -45,13 +44,11 @@
     top: 0;
     left: 2px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
-    //border-radius: 4px;
     @include border-radius(4px);
-    behavior: url(PIE.htc);
     z-index: 1;
   }
 
-  .img_article {
+  .image__article {
     position: absolute;
     width: 90%;
     top: 73px;
@@ -87,7 +84,7 @@
   }
 
 
-  .button_step {
+  .image__button-step {
     font:$size - 10 $font-MontserratRegular;
     display: block;
     text-transform: uppercase;
@@ -100,12 +97,12 @@
     padding: 4px 0 3px 15px;
   }
 
-  .img_title {
+  .image__title {
     font: $size + 4 $font-MontserratBold;
     margin: 14px 0 0 -2px;
   }
 
-  .img_text {
+  .image__text {
     font: $size - 6 $font-RobotoLight;
     color: rgb(204, 204, 204);
     margin: 10px 0 0 -2px;
@@ -133,11 +130,11 @@
 
 @media (min-width: $middle) {
 
-  .content_title {
+  .content__title {
     margin: 94px 0 0 6px;
   }
 
-  .carousel-wrapper {
+  .content__carousel-wrapper {
     margin: 33px auto;
     width: 768px;
     height: 100%;
@@ -151,7 +148,7 @@
     height: 400px;
   }
 
-  .img_carousel {
+  .owl-carousel__image {
     width: 236px;
     height: 400px;
     border: 1px solid white;
@@ -160,11 +157,11 @@
     behavior: url(PIE.htc);
   }
 
-  .img_article{
+  .image__article {
     margin: 139px 0 0 0;
   }
 
-  .img_carousel:nth-child(3) {
+  .owl-carousel__image:nth-child(3) {
     margin-right: 0;
   }
 
@@ -196,7 +193,7 @@
     margin: 0 -4px 0 0;
   }
 
-  .img_carousel::after {
+  .owl-carousel__image::after {
     width: 234px;
     background-image: none;
   }
@@ -205,11 +202,11 @@
 
 @media (min-width: 1024px) {
 
-  .content_title {
+  .content__title {
     margin: 94px 0 0 -3px;
 
   }
-  .carousel-wrapper {
+  .content__carousel-wrapper {
     width: 1024px;
     padding: 0 30px;
   }
@@ -219,12 +216,12 @@
     height: 400px;
   }
 
-  .img_carousel {
+  .owl-carousel__image {
     width: 300px;
     height: 400px;
   }
 
-  .img_article{
+  .image__article{
     margin: 155px 0 0 2px;
   }
 
