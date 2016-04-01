@@ -65,18 +65,18 @@ gulp.task('src', function() {
 gulp.task('js', function() {
     return combine(
         gulp.src('src/js/**/*.js'),
-        jshint(),
-        jshint.reporter('default'),
+        //jshint(),
+        //jshint.reporter('default'),
         rigger(),
         gulpIf(isDevelopment, sourcemaps.init()),
-        uglify(),
+        //uglify(),
         gulpIf(isDevelopment, sourcemaps.write()),
         gulp.dest('build/js')
     ).on('error', notify.onError());
 });
 
 gulp.task('js:lib', function() {
-    return gulp.src('src/lib/owl.carousel.min.js')
+    return gulp.src('src/lib/imagesloaded.pkgd.min.js')
         .pipe(gulp.dest('build/lib'));
 });
 
