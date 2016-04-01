@@ -4,7 +4,7 @@
 @import 'variables';
 
 @media (min-width: $small) {
-  .footer_block {
+  .footer__block {
     position: relative;
     overflow: hidden;
     margin: 54px auto;
@@ -14,7 +14,7 @@
     border-top: 4px solid rgb(255, 78, 80);
   }
 
-  .footer_title {
+  .footer__title {
     text-transform: uppercase;
     color: rgb(255, 78, 80);
     font: $size - 4 $font-MontserratBold;
@@ -22,17 +22,17 @@
     margin: 16px 0 0 0;
   }
 
-  .footer_content {
+  .footer__content {
     position: relative;
     overflow: hidden;
     margin: 11px auto;
     padding-bottom: 2px;
   }
-  .footer_content_title {
+  .footer__content_title {
     font: $size - 6 $font-MontserratBold;
   }
 
-  .footer_list {
+  .footer__list {
     position: relative;
     overflow: hidden;
     width: 80%;
@@ -40,7 +40,7 @@
     padding-left: 17px;
   }
 
-  .footer_link {
+  .footer__link {
     display: block;
     float: left;
     margin-left: 13px;
@@ -48,13 +48,13 @@
     font: $size - 6 $font-RobotoLight;
   }
 
-  .footer_logo {
+  .footer__logo {
     position: relative;
     overflow: hidden;
     margin: 13px auto;
   }
 
-  .footer_design {
+  .footer__design {
     color: rgb(204, 204, 204);
     text-transform: uppercase;
     font: $size - 10 $font-MontserratBold;
@@ -64,41 +64,41 @@
 }
 
 @media (min-width: $middle) {
-  .footer_block {
+  .footer__block {
     margin: 104px auto;
     width: 100%;
   }
-  .footer_wrap {
+  .footer__wrap {
     width: 90%;
     margin: 11px auto;
   }
 
-  .footer_title {
+  .footer__title {
     float: left;
     clear: both;
     margin-top: 25px;
   }
 
-  .footer_content {
+  .footer__content {
     float: left;
     margin-left: 12.5%;
     top: 15px;
     width: 140px;
   }
 
-  .footer_list,
-  .footer_link,
-  .footer_content_title {
+  .footer__list,
+  .footer__link,
+  .footer__content_title {
     margin: 0;
     padding: 0;
     float: left;
   }
 
-  .footer_content_title {
+  .footer__content_title {
     padding-bottom: 6px;
   }
 
-  .footer_link {
+  .footer__link {
     clear: both;
     line-height: 1.8;
   }
@@ -107,22 +107,22 @@
     margin: 3.7% 0 0 4.4%;
   }
 
-  .footer_logo {
+  .footer__logo {
     float: right;
     margin: 4% 0 0 0;
   }
 
-  .footer_design {
+  .footer__design {
     margin: 0 -28px 4px 0;
   }
 }
 
 @media (min-width: 1024px) {
-  .footer_wrap {
+  .footer__wrap {
     width: 65.5%;
   }
 
-  .footer_content {
+  .footer__content {
     margin-left: 10.5%;
   }
 
@@ -130,7 +130,7 @@
     margin: 2.8% 0 0 2.2%;
   }
 
-  .footer_logo {
+  .footer__logo {
     margin: 3% 0 0 0;
   }
 }

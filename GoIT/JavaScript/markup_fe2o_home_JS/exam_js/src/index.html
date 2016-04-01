@@ -199,50 +199,53 @@
             </div>
         </div>
         <div class="content_gallery">
-            <h2 class="gallerry_title">Discover holiday activity ideas</h2>
+            <h2 class="gallerry__title">Discover holiday activity ideas</h2>
+            <div class="gallerry__title__data clearfix">
+            </div>
 
             <script type="text/template" id="template">
                 <div class="grid">
                     <% for (var i = 0; i < images.length; i++) {%>
-                    <div class="grid_item <% if ((i==5)||(i==4)){%>
-				                        	grid_item_big
+                    <div class="grid__item <% if ((i==5)||(i==4)){%>
+				                        	grid__item_big
 				                        <%}%>
 				                        animated zoomIn" style="background: url(<%=images[i].imageurl%>) center no-repeat; background-size: 100% 100%">
-                        <p class="item_text"><%= images[i].word %></p>
+                        <p class="item__text"><%= images[i].word %></p>
+                        <div class="item__shadow"></div>
                     </div>
                     <%}%>
                 </div>
+
             </script>
-            <div class="modal"><div class="modal-overlay"><img class="modal-image" src=""></div></div></div>
 
         </div>
 
         <div class="search" >
-            <h2 class="search_title">Discover holiday activity ideas</h2>
+            <h2 class="search__title">Discover holiday activity ideas</h2>
             <form action="#" class="form">
-                <h4 class="form_question">Hi! What are your holiday interests?</h4>
-                <input type="text" class="form_edit" placeholder="Enter you interests" id="edit">
-                <input type="submit" value="Search parthers" class="form_input" id="search">
+                <h4 class="form__question">Hi! What are your holiday interests?</h4>
+                <input type="text" class="form__edit" placeholder="Enter you interests" id="edit">
+                <input type="submit" value="Search parthers" class="form__input" id="search">
             </form>
         </div>
 
-        <footer class="footer_block" id="companyContact">
-            <div class="footer_wrap">
-                <h1 class="footer_title">URLAUBSGLÜCK</h1>
-                <div class="footer_content">
-                    <h1 class="footer_content_title">Company</h1>
+        <footer class="footer__block" id="companyContact">
+            <div class="footer__wrap">
+                <h1 class="footer__title">URLAUBSGLÜCK</h1>
+                <div class="footer__content">
+                    <h1 class="footer__content_title">Company</h1>
                     <nav>
-                        <ul class="footer_list">
-                            <li><a class="footer_link" href="#">About</a></li>
-                            <li><a class="footer_link" href="#">Contacts</a></li>
-                            <li><a class="footer_link" href="#">Press</a></li>
-                            <li><a href="#" class="footer_link last">Blog</a></li>
+                        <ul class="footer__list">
+                            <li><a class="footer__link" href="#">About</a></li>
+                            <li><a class="footer__link" href="#">Contacts</a></li>
+                            <li><a class="footer__link" href="#">Press</a></li>
+                            <li><a href="#" class="footer__link last">Blog</a></li>
                         </ul>
                     </nav>
                 </div>
-                <h1 class="footer_content_title second">Partners</h1>
-                <div class="footer_logo">
-                    <h4 class="footer_design">design by</h4>
+                <h1 class="footer__content_title second">Partners</h1>
+                <div class="footer__logo">
+                    <h4 class="footer__design">design by</h4>
                     <img src="img/logo_footer.png" alt="">
                 </div>
             </div>
