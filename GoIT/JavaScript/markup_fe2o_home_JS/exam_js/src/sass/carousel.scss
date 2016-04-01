@@ -29,7 +29,6 @@
     height: 240px;
   }
   .owl-carousel__image {
-    display: table;
     width: 300px;
     height: 240px;
     border: 1px solid transparent;
@@ -50,8 +49,6 @@
   }
 
   .image__article {
-    display: table-cell;
-    float: left;
     position: absolute;
     width: 90%;
     top: 73px;
@@ -74,7 +71,7 @@
 
   .step2 {
     background-image:  url("../img/slider_mobile_2.png");
-    & .img_article {
+    & .img__article {
       margin: 29px 0 0 -1px;
     }
 
@@ -220,14 +217,11 @@
   }
 
   .owl-carousel__image {
-    display: table;
     width: 300px;
     height: 400px;
   }
 
   .image__article{
-    display: table-cell;
-    float: left;
     margin: 155px 0 0 2px;
   }
 
