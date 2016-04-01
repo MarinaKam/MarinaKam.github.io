@@ -1,11 +1,6 @@
 
-
 //= ../lib/owl.carousel.min.js
 //= ../lib/tmpl.js
-
-function getWord(min, max){
-    var rand = min + Math.floor(Math.random() * (max + 1 - min));
-}
 
 $(function () {
 
@@ -48,7 +43,6 @@ $(function () {
 
     var pic = '';
 
-    var queryWord = getWord(0,12);
 
     function renderList(pic) {
 
@@ -65,18 +59,40 @@ $(function () {
 
                 $('.content_gallery').append(piclist);
 
-                $('.grid').imagesLoaded( function() {
-                    $('.grid').masonry({
-                        itemSelector: '.grid_item',
-                        columnWidth: '.grid_item',
+                //$('.grid').imagesLoaded( function() {
+                //    $('.grid').masonry({
+                //        itemSelector: '.grid_item',
+                //        columnWidth: '.grid_item',
+                //        gutter: 20
+                //    });
+                //});
+
+                $('.grid').isotope({
+                    itemSelector: '.grid_item',
+                    layoutMode: 'masonry',
+                    masonry: {
                         gutter: 20
-                    });
+                    }
                 });
+
+                $('.modal').hide();
+
+                $('.grid_item').on('click', showModal);
+
+                function showModal(e){
+                    var targIndex = $(this).index();
+                    var modalURL = data.images[targIndex].imageurl;
+
+                    $('.modal-image').attr('src', modalURL);
+                    $('.modal').show();
+                }
 
 
             }
         });
     }
+
+
 
     $('.form').submit(function(e) {
 
@@ -86,6 +102,11 @@ $(function () {
 
     });
 
-    renderList(queryWord);
+    renderList();
+    $('.modal-image').on('click', hideModal);
+
+    function hideModal(){
+        $('.modal').hide();
+    }
 
 });
