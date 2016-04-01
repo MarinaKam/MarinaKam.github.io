@@ -1,9 +1,16 @@
+//= ../lib/jquery-1.9.1.min.js
 //= ../lib/tmpl.js
-//= ../lib/masonry.pkgd.min.js
-//= ../lib/imagesloaded.pkgd.min.js
 //= ../lib/owl.carousel.min.js
+//= ../lib/imagesloaded.pkgd.min.js
+//= ../lib/masonry.pkgd.min.js
+
+function getWord(min, max){
+    var rand = min + Math.floor(Math.random() * (max + 1 - min));
+}
 
 $(function () {
+
+    $.support.cors = true;
 
     $(".owl-carousel").owlCarousel({
 
@@ -42,13 +49,15 @@ $(function () {
 
     var pic = '';
 
+    var queryWord = getWord(0,12);
+
     function renderList(pic) {
 
         $.ajax({
             type: 'GET',
             dataType: 'json',
             cache: false,
-            url: 'http://api.pixplorer.co.uk/image?word=' + pic + '&amount=7&size=td',
+            url: 'http://api.pixplorer.co.uk/image?word=' + pic + '&amount=7&size=m',
             success: function(data) {
 
                 var piclist = tmpl($('#template').html(), data);
@@ -78,6 +87,6 @@ $(function () {
 
     });
 
-    renderList();
+    renderList(queryWord);
 
 });
