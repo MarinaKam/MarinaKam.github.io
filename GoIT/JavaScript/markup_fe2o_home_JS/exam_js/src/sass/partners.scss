@@ -14,12 +14,12 @@
     color: rgb(51, 51, 51);
   }
 
-  .partners_title {
+  .partners__title {
     font: $size + 2 $font-MontserratBold;
     margin: 18px 0 0 -7px;
   }
 
-  .figure {
+  .humans__figure {
     width: 90%;
     margin: 13px auto;
     display: block;
@@ -29,7 +29,7 @@
     padding: 1px 4px 0 0;
   }
 
-  .humans_face {
+  .humans__face {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -43,7 +43,7 @@
     border-radius: 50%;
   }
 
-  .humans_sprit {
+  .humans__sprit {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -52,17 +52,17 @@
     background: rgba(0, 0, 0, 0) url("../img/sprite-desktop-small-1.png") no-repeat -2px -3px;
   }
 
-  .humans_info {
+  .humans__info {
     width: 230px;
     margin: 3px auto;
     padding-bottom: 15px;
   }
 
-  .info_title {
+  .humans__info-title {
     font: $size - 6 $font-MontserratBold;
   }
 
-  .info_text {
+  .humans__info-text {
     font: $size - 6 $font-RobotoLight;
     color: rgb(102, 102, 102);
     margin: 13px 0 0 0;
@@ -82,14 +82,14 @@
     background: rgba(0, 0, 0, 0) url("../img/sprite-desktop-small-1.png") no-repeat -124px -3px;
   }
 
-  .partners_form {
+  .partners__form {
     position: relative;
     overflow: hidden;
     width: 286px;
     margin: 0 auto;
   }
 
-  .partners_button {
+  .partners__button {
     display: block;
     width: 280px;
     height: 40px;
@@ -110,12 +110,12 @@
     height: 100%;
     }
 
-  .partners_men, .partners_women {
+  .partners__men, .partners__women {
     width: 48%;
     height: 570px;
   }
 
-  .partners_men {
+  .partners__men {
     float: left;
     display: inline;
     margin-left: 5px;
@@ -124,14 +124,14 @@
     }
   }
 
-  .partners_women {
+  .partners__women {
     float: right;
     & .humans_info {
       margin-left: -9px;
     }
   }
 
-  .figure {
+  .humans__figure {
     margin: 30px auto;
   }
 
@@ -139,13 +139,13 @@
     padding-top: 14px;
   }
 
-  .partners_form {
+  .partners__form {
     width: 200px;
     top: -8px;
     left: 2px;
   }
 
-  .partners_button {
+  .partners__button {
     width: 192px;
     height: 40px;
   }
@@ -160,11 +160,11 @@
     clear: both;
   }
 
-  .partners_men, .partners_women {
+  .partners__men, .partners__women {
     height: 310px;
   }
 
-  .figure {
+  .humans__figure {
     width: 46%;
     margin-bottom: 59px;
   }
@@ -180,7 +180,7 @@
 
   .face3{
     margin-left: -53.2%;
-    & .humans_info {
+    & .humans__info {
       margin-left: -8%;
     }
   }
@@ -188,7 +188,7 @@
   .face4, .face2 {
     float: right;
     display: inline;
-    & .humans_info {
+    & .humans__info {
       margin-left: -13px;
     }
   }
