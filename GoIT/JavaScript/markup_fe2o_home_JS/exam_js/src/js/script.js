@@ -4,7 +4,10 @@
 
 $(function () {
 
-    $.support.cors = true;
+    $.support.cors = true;//for ie
+
+    $(window).scroll(function () {if ($(this).scrollTop() > 0) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
+    $('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 2000); return false;});
 
     $(".owl-carousel").owlCarousel({
 
@@ -90,8 +93,6 @@ $(function () {
 
     }
 
-    renderList();
-
     $('.form').submit(function(e) {
 
         e.preventDefault();
@@ -99,6 +100,8 @@ $(function () {
         renderList(query);
 
     });
+
+    renderList();
 
     function showModal() {
         var index = $(this).index();
