@@ -95,7 +95,7 @@ $(function () {
     $('.form').submit(function(e) {
 
         e.preventDefault();
-        var query = encodeURIComponent($('.form_edit').val());
+        var query = encodeURIComponent($('.form__edit').val());
         renderList(query);
 
     });
