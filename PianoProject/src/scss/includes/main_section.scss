@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Main Section Styles
+   ========================================================================== */
+@import "params";
+@import "media";
+
+.main-section {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
+.main-section__grid {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  flex: 1 1 100%;
+  & li {
+    position: relative;
+    margin-left: 5px;
+    text-transform: uppercase;
+    & a {
+      color: $text_color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      top: 7px;
+      left: -10px;
+      border: 1px solid $text_color;
+      background-color: rgba($text_color, 1);
+      border-radius: 50px;
+    }
+  }
+  & ul {
+    margin-bottom: 20px;
+  }
+}
+
+.stands {
+  height: 200px;
+}
+
+.btn-block {
+  display: none;
+  flex-basis: 100%;
+  text-align: center;
+  & div {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    margin: 0 auto;
+  }
+  & a {
+    position: relative;
+    margin: 0 auto;
+    top: -20px;
+    @include btn;
+    padding: 10px 25px;
+    width: 150px;
+  }
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+.article {
+  padding-top: 80px;
+  & div {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    margin: 0 auto;
+  }
+}
+
+.article-text {
+  margin-bottom: 80px;
+}
+
+.main-section__btn {
+  @include btn;
+  padding: 10px 25px;
+  width: 150px;
+}
+
+.article {
+  & .main-section__btn {
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+@include sm {
+  .main-section__btn {
+    display: none;
+  }
+
+  .btn-block {
+    display: block;
+  }
+  .main-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-section__grid {
+    width: auto;
+    flex-basis: 35%;
+  }
+  .stands {
+    flex-basis: 25%;
+    padding: 0 10px;
+  }
+
+  .article {
+    padding-top: 10px;
+  }
+}
+
+@include lg {
+  .main-section__grid {
+    flex-basis: 35%;
+  }
+
+  .stands {
+    flex-basis: 25%;
+    padding: 0 10px;
+  }
+}
+

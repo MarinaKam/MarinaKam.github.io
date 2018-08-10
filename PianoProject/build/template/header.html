@@ -1,0 +1,106 @@
+<header class="header">
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <!--<img src="css/img/form_logo.png" alt="Piano Pubblicitarion" class="avatar">-->
+            </div>
+
+            <div class="container">
+                <label><b>Имя</b></label>
+                <input class="container__name" type="text" placeholder="Имя" name="uname" required>
+
+                <label><b>Телефон</b></label>
+                <input class="container__tel" type="tel" placeholder="Телефон" name="tel" required>
+
+                <button class="container__submit" type="submit">Отправить</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+            </div>
+        </form>
+    </div>
+    <a class="header__logo">Piano<br> <span>pubblicitario</span></a>
+    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+    <input class="header__support-search" type="text" name="search" placeholder="">
+    <div class="header__support">
+        <div class="header__support-phone">
+            <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+            <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+        </div>
+        <button class="support-btn" onclick="document.getElementById('id01').style.display='block'">Заказать звонок</button>
+        <nav class="header__nav-btn">
+            <button class="nav-toggle" onclick="openNav()">
+                <span class="bar-top"></span>
+                <span class="bar-mid"></span>
+                <span class="bar-bot"></span>
+            </button>
+        </nav>
+        <nav class="hidden-nav">
+            <ul class="hidden-accordion">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li class="hidden-accordion__item">
+                    <a href="#">Наружная реклама</a>
+                    <ul class="hidden-item">
+                        <li><a href="#">Объемные буквы</a></li>
+                        <li><a href="#">Световые объемные буквы</a></li>
+                        <li><a href="#">Имитация объемных букв</a></li>
+                        <li><a href="#">Лайтбокс (световой короб)</a></li>
+                        <li><a href="#">Вывески</a></li>
+                        <li><a href="#">Таблички</a></li>
+                        <li><a href="#">Штендеры</a></li>
+                        <li><a href="#">Баннера</a></li>
+                    </ul>
+                </li>
+                <li class="hidden-accordion__item">
+                    <a href="#">Широкоформатная печать</a>
+                    <ul class="hidden-item">
+                        <li><a href="#">Постеры</a></li>
+                        <li><a href="#">Плакаты</a></li>
+                        <li><a href="#">Бигборды</a></li>
+                        <li><a href="#">Баннеры</a></li>
+                        <li><a href="#">Самоклеящаяся пленка</a></li>
+                        <li><a href="#">Фотообои</a></li>
+                        <li><a href="#">Картины на холсте</a></li>
+                        <li><a href="#">Интерьерные наклейки</a></li>
+                        <li><a href="#">УФ печать на ПВХ</a></li>
+                    </ul>
+                </li>
+                <li class="hidden-accordion__item">
+                    <a href="#">Стенды</a>
+                    <ul class="hidden-item">
+                        <li><a href="#">Для детских садов</a></li>
+                        <li><a href="#">Для школ</a></li>
+                        <li><a href="#">Информационные стенды</a></li>
+                        <li><a href="#">Уголки потребителя</a></li>
+                    </ul>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Связь с менеджерами:</h4>
+                    <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+                    <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+                    <a href="#" class="header__phone-link">email@gmail.com</a>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Адрес:</h4>
+                    <p class="header__phone-link">г. Мелитополь</p>
+                    <p class="header__phone-link">ул. Грушевского 41/1</p>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Мы в социальных сетях:</h4>
+                    <ul class="social-nav">
+                        <li class="social-nav__item"><a href="#" class="fa fa-facebook fa-2x"></a></li>
+                        <li class="social-nav__item"><a href="#" class="fa fa-google fa-2x"></a></li>
+                        <li class="social-nav__item"><a href="#" class="fa fa-instagram fa-2x"></a></li>
+                        <li class="social-nav__item"><a href="#" class="fa fa-skype fa-2x"></a></li>
+                    </ul>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Время работы:</h4>
+                    <p>пн-сб 9:00 - 18:00</p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,requiresActiveX=true">
+    <title>Piano Pubblicitario - Post Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/swiper.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header class="header">
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <!--<img src="css/img/form_logo.png" alt="Piano Pubblicitarion" class="avatar">-->
+            </div>
+
+            <div class="container">
+                <label><b>Имя</b></label>
+                <input class="container__name" type="text" placeholder="Имя" name="uname" required>
+
+                <label><b>Телефон</b></label>
+                <input class="container__tel" type="tel" placeholder="Телефон" name="tel" required>
+
+                <button class="container__submit" type="submit">Отправить</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+            </div>
+        </form>
+    </div>
+    <a href="index.html" class="header__logo">Piano<br> <span>pubblicitario</span></a>
+    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+    <input class="header__support-search" type="text" name="search" placeholder="">
+    <div class="header__support">
+        <div class="header__support-phone">
+            <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+            <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+        </div>
+        <button class="support-btn" onclick="document.getElementById('id01').style.display='block'">Заказать звонок</button>
+        <nav class="header__nav-btn">
+            <button class="nav-toggle" onclick="openNav()">
+                <span class="bar-top"></span>
+                <span class="bar-mid"></span>
+                <span class="bar-bot"></span>
+            </button>
+        </nav>
+        <nav class="hidden-nav">
+            <ul class="hidden-accordion">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li class="hidden-accordion__item">
+                    <a href="#">Наружная реклама</a>
+                    <ul class="hidden-item">
+                        <li><a href="#">Объемные буквы</a></li>
+                        <li><a href="#">Световые объемные буквы</a></li>
+                        <li><a href="#">Имитация объемных букв</a></li>
+                        <li><a href="#">Лайтбокс (световой короб)</a></li>
+                        <li><a href="#">Вывески</a></li>
+                        <li><a href="#">Таблички</a></li>
+                        <li><a href="#">Штендеры</a></li>
+                        <li><a href="#">Баннера</a></li>
+                    </ul>
+                </li>
+                <li class="hidden-accordion__item">
+                    <a href="#">Широкоформатная печать</a>
+                    <ul class="hidden-item">
+                        <li><a href="#">Постеры</a></li>
+                        <li><a href="#">Плакаты</a></li>
+                        <li><a href="#">Бигборды</a></li>
+                        <li><a href="#">Баннеры</a></li>
+                        <li><a href="#">Самоклеящаяся пленка</a></li>
+                        <li><a href="#">Фотообои</a></li>
+                        <li><a href="#">Картины на холсте</a></li>
+                        <li><a href="#">Интерьерные наклейки</a></li>
+                        <li><a href="#">УФ печать на ПВХ</a></li>
+                    </ul>
+                </li>
+                <li class="hidden-accordion__item">
+                    <a href="#">Стенды</a>
+                    <ul class="hidden-item">
+                        <li><a href="#">Для детских садов</a></li>
+                        <li><a href="#">Для школ</a></li>
+                        <li><a href="#">Информационные стенды</a></li>
+                        <li><a href="#">Уголки потребителя</a></li>
+                    </ul>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Связь с менеджерами:</h4>
+                    <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+                    <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+                    <a href="#" class="header__phone-link">email@gmail.com</a>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Адрес:</h4>
+                    <p class="header__phone-link">г. Мелитополь</p>
+                    <p class="header__phone-link">ул. Грушевского 41/1</p>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Мы в социальных сетях:</h4>
+                    <ul class="social-nav">
+                        <li class="social-nav__item"><a href="#" class="fa fa-facebook fa-2x"></a></li>
+                        <li class="social-nav__item"><a href="#" class="fa fa-google fa-2x"></a></li>
+                        <li class="social-nav__item"><a href="#" class="fa fa-instagram fa-2x"></a></li>
+                        <li class="social-nav__item"><a href="#" class="fa fa-skype fa-2x"></a></li>
+                    </ul>
+                </li>
+                <li class="footer__cnt-item">
+                    <h4>Время работы:</h4>
+                    <p>пн-сб 9:00 - 18:00</p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="post-page main-section">
+    <nav class="main-section__grid grid">
+        <h3 class="grid-title">Наружная реклама</h3>
+        <ul>
+            <li class="grid__item"><a href="#">Объемные буквы</a></li>
+            <li class="grid__item"><a href="#">Световые объемные буквы</a></li>
+            <li class="grid__item"><a href="#">Имитация объемных букв</a></li>
+            <li class="grid__item"><a href="#">Лайтбокс (световой короб)</a></li>
+            <li class="grid__item"><a href="#">Вывески</a></li>
+            <li class="grid__item"><a href="#">Таблички</a></li>
+            <li class="grid__item"><a href="#">Штендеры</a></li>
+            <li class="grid__item"><a href="#">Баннера</a></li>
+        </ul>
+    </nav>
+    <nav class="main-section__grid grid">
+        <ul>
+            <h3 class="grid-title">Широкоформатная печать</h3>
+            <li class="grid__item"><a href="#">Постеры</a></li>
+            <li class="grid__item"><a href="#">Плакаты</a></li>
+            <li class="grid__item"><a href="#">Бигборды</a></li>
+            <li class="grid__item"><a href="#">Баннеры</a></li>
+            <li class="grid__item"><a href="#">Самоклеящаяся пленка</a></li>
+            <li class="grid__item"><a href="#">Фотообои</a></li>
+            <li class="grid__item"><a href="#">Картины на холсте</a></li>
+            <li class="grid__item"><a href="#">Интерьерные наклейки</a></li>
+            <li class="grid__item"><a href="#">УФ печать на ПВХ</a></li>
+        </ul>
+    </nav>
+    <nav class="main-section__grid grid stands">
+        <ul>
+            <h3 class="grid-title">Стенды</h3>
+            <li class="grid__item"><a href="#">Для детских садов</a></li>
+            <li class="grid__item"><a href="#">Для школ</a></li>
+            <li class="grid__item"><a href="#">Информационные стенды</a></li>
+            <li class="grid__item"><a href="#">Уголки потребителя</a></li>
+        </ul>
+    </nav>
+    <article class="article services-text">
+        <h3 class="article-title">Наши возможности</h3>
+        <p class="article-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </article>
+</section>
+<section class="post-section">
+    <div class="row-section">
+        <div class="column-section">
+            <img src="css/img/letters.jpg" alt="" class="column-section__image">
+            <img src="css/img/banner.jpg" alt="" class="column-section__image">
+            <img src="css/img/standers.jpg" alt="" class="column-section__image">
+            <img src="css/img/signage.jpg" alt="" class="column-section__image">
+        </div>
+
+        <div class="column-section">
+            <img src="css/img/banner.jpg" alt="" class="column-section__image">
+            <img src="css/img/standers.jpg" alt="" class="column-section__image">
+            <img src="css/img/letters.jpg" alt="" class="column-section__image">
+            <img src="css/img/decals.jpg" alt="" class="column-section__image">
+        </div>
+
+        <div class="column-section">
+            <img src="css/img/standers.jpg" alt="" class="column-section__image">
+            <img src="css/img/letters.jpg" alt="" class="column-section__image">
+            <img src="css/img/signage.jpg" alt="" class="column-section__image">
+            <img src="css/img/decals.jpg" alt="" class="column-section__image">
+        </div>
+
+        <div class="column-section">
+            <img src="css/img/standers.jpg" alt="" class="column-section__image">
+            <img src="css/img/lightbox.jpg" alt="" class="column-section__image">
+            <img src="css/img/signage.jpg" alt="" class="column-section__image">
+            <img src="css/img/letters.jpg" alt="" class="column-section__image">
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__header">
+        <a class="header__logo">Piano<br> <span>pubblicitario</span></a>
+        <form class="footer__form" action="">
+            <input type="text" placeholder="email@mail.com" name="subscribe">
+            <button>Подписаться</button>
+        </form>
+    </div>
+    <div class="footer__cnt">
+        <ul>
+            <li class="footer__cnt-item">
+                <h4>Время работы:</h4>
+                <p>пн-сб 9:00 - 18:00</p>
+            </li>
+            <li class="footer__cnt-item">
+                <h4>Связь с менеджерами:</h4>
+                <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+                <a href="#" class="header__phone-link">+38 (099) 999-99-99</a>
+                <a href="#" class="header__phone-link">email@gmail.com</a>
+            </li>
+            <li class="footer__cnt-item">
+                <h4>Адрес:</h4>
+                <p class="header__phone-link">г. Мелитополь</p>
+                <p class="header__phone-link">ул. Грушевского 41/1</p>
+            </li>
+            <li class="footer__cnt-item">
+                <h4>Мы в социальных сетях:</h4>
+                <ul class="social-nav">
+                    <li class="social-nav__item"><a href="#" class="fa fa-facebook fa-2x"></a></li>
+                    <li class="social-nav__item"><a href="#" class="fa fa-google fa-2x"></a></li>
+                    <li class="social-nav__item"><a href="#" class="fa fa-instagram fa-2x"></a></li>
+                    <li class="social-nav__item"><a href="#" class="fa fa-skype fa-2x"></a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</footer>
+<div class="footer__btm-cnt">
+    <p>&copy; 2012 - 2018 Piano pubblicitario. Все права защищены.</p>
+</div>
+<div class="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-line-wrap">
+            <div class="preloader-line"></div>
+        </div>
+        <div class="preloader-line-wrap">
+            <div class="preloader-line"></div>
+        </div>
+        <div class="preloader-line-wrap">
+            <div class="preloader-line"></div>
+        </div>
+        <div class="preloader-line-wrap">
+            <div class="preloader-line"></div>
+        </div>
+        <div class="preloader-line-wrap">
+            <div class="preloader-line"></div>
+        </div>
+    </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmH8AcjNAbxDqvPo91b3wBLTSjg7zULBE"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="lib/swiper.js"></script>
+<script>
+    function openNav() {
+        $(".hidden-nav").width("310px");
+    }
+    function closeNav() {
+        $(".hidden-nav").width('0');
+    }
+    let modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script src="js/script.js"></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');
+    ga('send','pageview');
+    (function(window){
+        let undefined,
+            link = function (href) {
+                let a = window.document.createElement('a');
+                a.href = href;
+                return a;
+            };
+        window.onerror = function (message, file, line, column) {
+            let host = link(file).hostname;
+            ga('send', {
+                'hitType': 'event',
+                'eventCategory': (host == window.location.hostname || host == undefined || host == '' ? '' : 'external ') + 'error',
+                'eventAction': message,
+                'eventLabel': (file + ' LINE: ' + line + (column ? ' COLUMN: ' + column : '')).trim(),
+                'nonInteraction': 1
+            });
+        };
+    }(window));
+
+    $(function(){
+        let isDuplicateScrollEvent,
+            scrollTimeStart = new Date,
+            $window = $(window),
+            $document = $(document),
+            scrollPercent;
+
+        $window.scroll(function() {
+            scrollPercent = Math.round(100 * ($window.height() + $window.scrollTop())/$document.height());
+            if (scrollPercent > 90 && !isDuplicateScrollEvent) { //page scrolled to 90%
+                isDuplicateScrollEvent = 1;
+                ga('send', 'event', 'scroll',
+                    'Window: ' + $window.height() + 'px; Document: ' + $document.height() + 'px; Time: ' + Math.round((new Date - scrollTimeStart )/1000,1) + 's'
+                );
+            }
+        });
+    });
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

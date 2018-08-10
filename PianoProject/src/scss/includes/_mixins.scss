@@ -1,0 +1,40 @@
+@import "params";
+@mixin btn {
+  color: white;
+  font-family: $fontMontserrat;
+  font-size: $font + 2;
+  font-weight: 400;
+  width: 210px;
+  height: 40px;
+  background-color: rgba($color, 0.8);
+  border: 1px solid rgba($color, 1);
+  transition: background-color .25s ease-in;
+  @content;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: rgba($color, 1);
+  }
+  cursor: pointer;
+}
+
+
+@mixin arrow($direction, $size, $stroke, $bgcolor) {
+  width: $size;
+  height: $size;
+  margin:$size/2;
+  -webkit-transform: rotate(($direction + 45) * 1deg);
+  -moz-transform: rotate(($direction + 45) * 1deg);
+  transform: rotate(($direction + 45) * 1deg);
+  -o-transform: rotate(($direction + 45) * 1deg);
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: $stroke;
+    top:  $stroke;
+    width: $size;
+    height: $size;
+    background: $bgcolor;
+  }
+}

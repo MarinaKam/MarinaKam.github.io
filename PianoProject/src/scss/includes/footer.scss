@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Footer styles
+   ========================================================================== */
+
+.footer {
+  background-color: rgba($footer_color, .8);
+  color: white;
+
+  & .social-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  & .social-nav__item {
+    margin-bottom: 10px;
+    & a {
+      padding: 8px 9px;
+      text-align: center;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+  }
+
+  & a.fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 8px 15px;
+  }
+
+  & .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  & .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  & .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+
+  & h4 {
+    font-weight: 400;
+    font-size: $font + 4;
+    height: 30px;
+  }
+}
+
+@include sm {
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+@include md {
+  .footer {
+    margin-top: 80px;
+  }
+}
+
+.footer__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  & a {
+    color: rgba(white, .6);
+    width: 140px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 20px;
+    flex: 1 1 20%;
+  }
+
+  & form {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+    flex: 1 1 70%;
+  }
+
+  & input[type=text] {
+    background-color: rgba(white, .6);
+    border: 0;
+    flex-basis: 65%;
+    outline: 0;
+    color: white;
+    font-size: $font + 2;
+    padding: 0 0 0 5px;
+  }
+
+  & button {
+    flex-basis: 25%;
+    border: 0;
+    background-color: rgba($text_color, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@include sm {
+  .footer__header {
+    & a {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer__cnt {
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer__cnt-item {
+  flex: 1 1 100%;
+
+  & a {
+    color: white;
+  }
+
+  & p {
+    color: white;
+    opacity: .7;
+  }
+}
+
+@include sm {
+  .footer__cnt-item {
+    flex: 1 1 50%;
+  }
+}
+
+
+@include lg {
+  .footer__cnt-item {
+    flex: 1 1 25%;
+  }
+}
+
+.footer__btm-cnt {
+  padding: 8px 2%;
+  background-color: $text_color;
+  color: white;
+  font-size: $font - 2;
+}
+
+@include sm {
+  .footer__btm-cnt {
+    padding: 8px 10px;
+  }
+}
+
+@include sm {
+  .footer__btm-cnt {
+    padding: 8px 12%;
+  }
+}

@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Slider-logo Styles
+   ========================================================================== */
+
+@import "media";
+@import "params";
+
+section.slider-logo {
+  padding: 60px 7%;
+}
+
+.logo-swiper {
+  width: 100%;
+}
+
+/* ==========================================================================
+   Advantages Styles
+   ========================================================================== */
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  & .grid__item {
+    flex: 1 1 100%;
+  }
+  & .fa {
+    border: 2px solid rgba($color, .4);
+    background-color: rgba($color, .15);
+    border-radius: 100%;
+    padding: 35px 0 0 0px;
+    width: 150px;
+    height: 150px;
+    color: rgba($color, .6);
+    margin-bottom: 30px;
+  }
+
+  & li:last-child .fa {
+    font-size: $font + 34;
+    padding: 45px 0 0 10px;
+  }
+
+  & li:nth-child(3) .fa {
+    padding: 40px 0 0 20px;
+  }
+
+  & .grid__text {
+    font-size: $font;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+
+@include sm {
+  .advantages__grid {
+    & .grid__item {
+      flex-basis: 30%;
+    }
+  }
+}
+
+@include md {
+  .advantages__grid {
+    & .grid__item {
+      flex-basis: 20%;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Article-section Styles
+   ========================================================================== */
+
+.article-section {
+  background-color: white !important;
+}
+
+.article__grid {
+  display: flex;
+  flex-direction: column;
+  & hr {
+    z-index: auto;
+    border-color: rgba($color, .3);
+    width: 82%;
+    margin: 0 auto 30px;
+    bottom: 0;
+  }
+}
+
+.article__grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100%;
+  & img {
+    width: 300px;
+    height: 270px;
+    margin-bottom: 30px;
+  }
+}
+
+.article__grid-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 10px 20px;
+
+  & h4 {
+    height: auto;
+    line-height: 1em;
+  }
+
+  & time {
+    font-size: $font - 1;
+  }
+
+  & p {
+    font-size: $font + 2;
+    padding-top: 10px;
+    color: rgba($text_color, .5);
+    margin-bottom: 10px;
+  }
+
+  .grid-block__link {
+    align-self: flex-end;
+    color: $colorLinks;
+  }
+}
+
+@include sm {
+  .article__grid-item {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    & img {
+      width: 220px;
+      height: 150px;
+      margin-bottom: 0;
+    }
+  }
+  .article__grid-block {
+    margin-left: 50px;
+  }
+}
+

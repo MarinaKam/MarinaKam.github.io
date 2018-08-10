@@ -1,0 +1,188 @@
+@import "params";
+@import "mixins";
+@import "media";
+/* ==========================================================================
+   Main_banner styles
+   ========================================================================== */
+
+.main-banner {
+  position: relative;
+  max-width: 100%;
+  height: 294px;
+
+}
+@include xs {
+  .main-banner {
+     height: 252px;
+  }
+}
+
+@include sm {
+  .main-banner {
+      height: 400px;
+  }
+}
+
+@include md {
+  .main-banner {
+      height: 600px;
+  }
+}
+
+@include xlg {
+  .main-banner {
+    height: 800px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-image: none;
+  .fa {
+    display: none;
+  }
+  @include sm {
+    & .fa {
+      display: block;
+      width: 72px;
+      color: white;
+      font-size: 46px;
+      opacity: .7;
+      padding: 80% 60%;
+      transition: font-size .25s ease-in;
+      text-shadow: 0 2px 1px #000;
+      &:hover {
+        opacity: 1;
+        text-shadow: 0 2px 3px #000;
+        font-size: 47px;
+      }
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-btn,
+.swiper-btn-call,
+.swiper-loader {
+  display: none;
+}
+
+@include sm {
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-loader {
+    display: block;
+  }
+
+  .swiper-button-prev {
+    left: 12%;
+  }
+
+  .swiper-button-next {
+    right: 13.333%;
+  }
+  .swiper-btn {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba($color, .8);
+    border: 1px solid $color;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000;
+    text-transform: capitalize;
+    color: white;
+    top: 25%;
+    left: 12%;
+    font-size: $font + 20;
+    font-weight: 200;
+    padding: 10px 10px 15px;
+    cursor: auto;
+    animation: 2s fadein 1.5s forwards;
+    opacity: 0;
+    &:hover {
+      background-color: rgba($color, 0.8);
+    }
+  }
+
+  .col {
+    display: block;
+    margin: 1% 0 1% 1.6%;
+  }
+
+  .swiper-loader {
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    text-align: center;
+    width: 50px;
+    z-index: 111;
+  }
+  .loader {
+    width: 40px;
+    height: 10px;
+    padding: 30px 0;
+    position: relative;
+    background-color: rgba(250, 250, 250, .3);
+    border-radius: 25px;
+    border: 2px solid white;
+    animation: slidedown 1.5s infinite;
+    cursor: pointer;
+    opacity: 1;
+    &:hover {
+      background-color: rgba(250, 250, 250, .6);
+    }
+  }
+
+  #loader:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    top: 0;
+    left: 48%;
+    background-color: white;
+    animation: rotatemove 1.5s infinite;
+  }
+
+  @keyframes slidedown {
+    0% {
+      transform: scale(1) translateY(0px);
+    }
+    100% {
+      transform: scale(1) translateY(5px);
+    }
+  }
+
+  @keyframes rotatemove {
+    0% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(.8) translateY(50px);
+      opacity: .2;
+    }
+  }
+}
+
+@include md {
+  .swiper-btn {
+    text-align: left;
+    font-size: $font + 30;
+  }
+}
+
+
+

@@ -3,7 +3,7 @@
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
 	border: 1px solid #3d3d3d;
-	box-shadow: 0 5px -5px #3d3d3d;
+	box-shadow: 0 5px 5px #3d3d3d;
 	z-index: 1;
 }
 .page-menu a{
@@ -49,7 +49,7 @@
 .page-submenu2 {
 	position: absolute;
 	width: 156px;
-	height: 131px
+	height: 131px;
 	border: 1px solid #222;
 	border-bottom-right-radius: 4px;
 	border-bottom-left-radius: 4px;
@@ -64,7 +64,7 @@
 	display: block;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.page-submenu1-list:last-child, page-submenu2-list:last-child {
+.page-submenu1-list:last-child, .page-submenu2-list:last-child {
 	border-bottom: 1px solid #222;
 }
 .page-submenu1-list a, .page-submenu2-list a {

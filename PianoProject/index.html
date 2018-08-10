@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="x-ua-compatible" content="ie=edge">-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge,requiresActiveX=true">
+
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="src/scss/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');
+            ga('send','pageview');
+            (function(window){
+                var undefined,
+                    link = function (href) {
+                        var a = window.document.createElement('a');
+                        a.href = href;
+                        return a;
+                    };
+                window.onerror = function (message, file, line, column) {
+                    var host = link(file).hostname;
+                    ga('send', {
+                        'hitType': 'event',
+                        'eventCategory': (host == window.location.hostname || host == undefined || host == '' ? '' : 'external ') + 'error',
+                        'eventAction': message,
+                        'eventLabel': (file + ' LINE: ' + line + (column ? ' COLUMN: ' + column : '')).trim(),
+                        'nonInteraction': 1
+                    });
+                };
+            }(window));
+
+            $(function(){
+                var isDuplicateScrollEvent,
+                    scrollTimeStart = new Date,
+                    $window = $(window),
+                    $document = $(document),
+                    scrollPercent;
+
+                $window.scroll(function() {
+                    scrollPercent = Math.round(100 * ($window.height() + $window.scrollTop())/$document.height());
+                    if (scrollPercent > 90 && !isDuplicateScrollEvent) { //page scrolled to 90%
+                        isDuplicateScrollEvent = 1;
+                        ga('send', 'event', 'scroll',
+                            'Window: ' + $window.height() + 'px; Document: ' + $document.height() + 'px; Time: ' + Math.round((new Date - scrollTimeStart )/1000,1) + 's'
+                        );
+                    }
+                });
+            });
+
+
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
