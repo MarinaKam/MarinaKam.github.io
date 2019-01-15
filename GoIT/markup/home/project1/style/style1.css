@@ -168,7 +168,6 @@ h2.services-title{
 }
 #middle{
     margin: 0 auto;
-    border: 1px solid transparent;
     background: rgba(0, 0, 0, 0) url("../img/banMiddle.jpg") no-repeat scroll 0 0/cover;
     padding-bottom: 30px;
 }
@@ -433,8 +432,8 @@ h2.services-title{
 }
 #testimonials{
     margin: 0 auto;
-    border: 1px solid transparent;
     background: rgba(0, 0, 0, 0) url("../img/task3.jpg") no-repeat scroll 0 0/cover;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 .testimonials-wrapper{

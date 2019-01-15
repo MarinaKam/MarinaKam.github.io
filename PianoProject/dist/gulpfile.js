@@ -53,9 +53,7 @@ gulp.task('styles', function () {
     })).pipe(_if(isDevelopment, sourcemaps.init())).pipe(scss({
         sourceMap: true,
         errLogToConsole: true
-    })).pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-    // .pipe(cssmin({keepBreaks: true}))
-    .pipe(_if(!isDevelopment, cssnano())).pipe(_if(!isDevelopment, cleanCSS())).pipe(_if(isDevelopment, rev())).pipe(concat('style.css')).pipe(_if(isDevelopment, sourcemaps.write())).pipe(plumber.stop()).pipe(gulp.dest(path.dist + '/css/')).pipe(_if(isDevelopment, rev.manifest('css.json'))).pipe(_if(isDevelopment, gulp.dest('manifest'))).pipe(reload({ stream: true }));
+    })).pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })).pipe(cssmin({ keepBreaks: true })).pipe(_if(!isDevelopment, cssnano())).pipe(_if(!isDevelopment, cleanCSS())).pipe(_if(isDevelopment, rev())).pipe(concat('style.css')).pipe(_if(isDevelopment, sourcemaps.write())).pipe(plumber.stop()).pipe(gulp.dest(path.dist + '/css/')).pipe(_if(isDevelopment, rev.manifest('css.json'))).pipe(_if(isDevelopment, gulp.dest('manifest'))).pipe(reload({ stream: true }));
 });
 
 gulp.task('clean', function () {
@@ -78,9 +76,7 @@ gulp.task('htmls', function () {
 gulp.task('scripts', function () {
     combine(gulp.src(path.src + '/js/*.js'), babel({
         presets: ['es2015']
-    }), rigger(), _if(isDevelopment, sourcemaps.init()),
-    // uglify(),
-    _if(isDevelopment, sourcemaps.write()), gulp.dest(path.dist + '/js/'), reload({ stream: true })).on('error', notify.onError());
+    }), rigger(), _if(isDevelopment, sourcemaps.init()), uglify(), _if(isDevelopment, sourcemaps.write()), gulp.dest(path.dist + '/js/'), reload({ stream: true })).on('error', notify.onError());
 });
 
 gulp.task('images', function () {

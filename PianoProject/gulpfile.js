@@ -56,7 +56,7 @@ gulp.task('styles', function() {
             errLogToConsole: true
         }))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-        // .pipe(cssmin({keepBreaks: true}))
+        .pipe(cssmin({keepBreaks: true}))
         .pipe(_if(!isDevelopment, cssnano()))
         .pipe(_if(!isDevelopment, cleanCSS()))
         .pipe(_if(isDevelopment, rev()))
@@ -97,7 +97,7 @@ gulp.task('scripts', function() {
         }),
         rigger(),
         _if(isDevelopment, sourcemaps.init()),
-        // uglify(),
+        uglify(),
         _if(isDevelopment, sourcemaps.write()),
         gulp.dest(`${path.dist}/js/`),
         reload({stream: true})
