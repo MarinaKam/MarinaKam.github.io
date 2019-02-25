@@ -3,11 +3,10 @@
  Например: Анна, оно, А роза упала на лапу Азора.
  Необходимо написать функцию isPal(string) которая возвращает true или false в зависимости от того является ли
  строка палиндромом или нет. */
-function isPal(string) {
-    string=string.toLowerCase().split(" ").join("");
-    var strReverse = string.split("").reverse().join("");
-    strReverse=strReverse.toLowerCase();
-    return (strReverse == string);
+function isPal(str) {
+    str = str.split(" ").join("").toLowerCase();
+    let strReverse = str.split("").reverse().join("").toLowerCase();
+    return strReverse === str;
 }
 
 console.log(isPal('Anna')); // true
